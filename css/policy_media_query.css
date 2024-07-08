@@ -1,0 +1,628 @@
+@media only screen and (max-width: 368px){
+        
+    /* header */
+
+    .nav-toggle,
+    .mobile-logo,
+    .nav-close {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 10px;
+    }
+
+    .mobile-logo {
+        left: 10px;
+        top: 4px;
+    }
+
+    .mobile-logo .textonly {
+        margin-left: 10px;
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    .nav-toggle {
+        right: 16px;
+        top: 16px;
+    }
+
+    .nav-close {
+        display: none;
+        right: 10px;
+        z-index: 2;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .nav-visible {
+        display: flex;
+    }
+
+    .nav-toggle.nav-visible~.nav-close {
+        display: flex;
+    }
+
+    .nav-toggle i,
+    .nav-close i {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .firstList,
+    .secondList {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+    }
+
+    .firstList li {
+        margin-bottom: 10px;
+    }
+
+    .language_logoandtext {
+        justify-content: center;
+    }
+
+    .popup {
+        position: absolute;
+        right: 10%;
+        top: 20%;
+        z-index: 3;
+        justify-content: center;
+    } 
+
+
+    
+    /* Cookie banner */
+
+    #cookieConsent {
+        display: none !important;
+    }
+
+
+
+    /* Main Section */
+
+   
+        
+    .policy_section{
+        padding: 0% 10% 10% 10%;
+    }
+
+    .policy_section .main_heading{
+        padding-bottom: 7%;
+    }
+
+
+    .policy_section .paragraph{
+        padding: 6% 0%;
+    }
+
+
+    .policy_section .paragraph h2{
+        padding-bottom: 3%;
+    }
+
+
+
+    .policy_section .paragraph ul, ol{
+        padding: 0% 8%;
+    }
+
+
+
+    /* Footer */
+
+
+
+    footer{
+        display: block;
+    }
+
+
+    footer .logoLanguageFooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    footer .logoLanguageFooter img{
+        margin-left: 12%;
+    }
+
+    .language-dropdown-btn {
+        text-align: center;
+        width: 160%;
+    }
+
+
+    .language-dropdown-content {
+        padding: 1% 5%;
+        width: 160%;
+    }
+
+
+        
+    .language-dropdown {
+        position: relative;
+        display: inline-block;
+        left: -20px;
+    }
+
+
+    #dropdown_icon{
+        margin-left: -22%;
+    }
+    
+
+    .language-dropdown ul li {
+        list-style-type: none;
+    }
+    
+
+
+    footer .company{
+        text-align: center;
+        padding: 5% 0px;
+    }
+
+
+    footer .community{
+        text-align: center;
+        padding: 5% 0px;
+        border: 1px solid #d1d4db;
+    }
+    
+    
+    footer .legal{
+        text-align: center;
+        padding: 5% 0px;
+        border-bottom: 1px solid #d1d4db;
+    }
+
+
+
+    footer .getTheApp{
+        text-align: center;
+        padding: 5% 0px;
+    }
+
+
+    footer .getTheApp h4{
+        display: none;
+    }
+
+    footer .getTheApp .icons{
+        display: none;
+    }
+
+
+    footer .getTheApp p{
+        margin-bottom: 3%;
+    }
+
+
+
+}
+
+
+
+@media only screen and (min-width: 368px) and (max-width: 768px){
+    
+    /* header */
+
+    .nav-toggle,
+    .mobile-logo,
+    .nav-close {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 10px;
+    }
+
+    .mobile-logo {
+        left: 10px;
+        top: 4px;
+    }
+
+    .mobile-logo .textonly {
+        margin-left: 10px;
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    .nav-toggle {
+        right: 16px;
+        top: 16px;
+    }
+
+    .nav-close {
+        display: none;
+        right: 10px;
+        z-index: 2;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .nav-visible {
+        display: flex;
+    }
+
+    .nav-toggle.nav-visible~.nav-close {
+        display: flex;
+    }
+
+    .nav-toggle i,
+    .nav-close i {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .firstList,
+    .secondList {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+    }
+
+    .firstList li {
+        margin-bottom: 10px;
+    }
+
+    .language_logoandtext {
+        justify-content: center;
+    }
+
+    .popup {
+        position: absolute;
+        right: 20%;
+        top: 21.5%;
+        z-index: 3;
+        justify-content: center;
+    } 
+
+
+    
+    /* Cookie banner */
+
+    #cookieConsent {
+        display: none !important;
+    }    
+
+
+
+    /* Section */
+
+        
+    .policy_section{
+        padding: 0% 7% 7% 7%;
+    }
+
+    .policy_section .main_heading{
+        padding-bottom: 0%;
+    }
+
+
+    .policy_section .paragraph{
+        padding: 6% 0%;
+    }
+
+
+    .policy_section .paragraph h2{
+        padding-bottom: 3%;
+    }
+
+
+
+    .policy_section .paragraph ul, ol{
+        padding: 0% 5%;
+    }
+
+
+
+    /* Footer */
+
+
+
+    footer{
+        display: block;
+    }
+
+
+    footer .logoLanguageFooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    footer .logoLanguageFooter img{
+        margin-left: 12%;
+    }
+
+    .language-dropdown-btn {
+        text-align: center;
+        width: 160%;
+    }
+
+
+    .language-dropdown-content {
+        padding: 1% 5%;
+        width: 160%;
+    }
+
+
+        
+    .language-dropdown {
+        position: relative;
+        display: inline-block;
+        left: -20px;
+    }
+
+
+    #dropdown_icon{
+        margin-left: -22%;
+    }
+    
+
+    .language-dropdown ul li {
+        list-style-type: none;
+    }
+    
+    
+
+    footer .company{
+        text-align: center;
+        padding: 3% 0px;
+    }
+
+
+    footer .community{
+        text-align: center;
+        padding: 3% 0px;
+        border: 1px solid #d1d4db;
+    }
+    
+    
+    footer .legal{
+        text-align: center;
+        padding: 3% 0px;
+        border-bottom: 1px solid #d1d4db;
+    }
+
+
+
+    footer .getTheApp{
+        text-align: center;
+        padding: 3% 0px;
+    }
+
+
+    footer .getTheApp h4{
+        display: none;
+    }
+
+    footer .getTheApp .icons{
+        display: none;
+    }
+
+
+    footer .getTheApp p{
+        margin-bottom: 2%;
+    }
+
+
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 910px){
+    
+    /* Header */
+
+    .firstList {
+        width: 100%;
+    }
+
+    .nav-toggle, .mobile-logo, .nav-close {
+        display: none;
+    }
+
+    .policy_section .paragraph ul, ol{
+        padding: 0% 5%;
+    }
+
+
+    /* Footer */
+
+    footer{
+        display: block;
+    }
+
+
+    footer .logoLanguageFooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    footer .logoLanguageFooter img{
+        margin-left: 12%;
+    }
+
+    .language-dropdown-btn {
+        text-align: center;
+        width: 160%;
+    }
+
+
+    .language-dropdown-content {
+        padding: 1% 5%;
+        width: 160%;
+    }
+
+
+        
+    .language-dropdown {
+        position: relative;
+        display: inline-block;
+        left: -20px;
+    }
+
+
+    #dropdown_icon{
+        margin-left: -22%;
+    }
+    
+
+    .language-dropdown ul li {
+        list-style-type: none;
+    }
+    
+    
+
+    footer .company{
+        text-align: center;
+        padding: 3% 0px;
+    }
+
+
+    footer .community{
+        text-align: center;
+        padding: 3% 0px;
+        border: 1px solid #d1d4db;
+    }
+    
+    
+    footer .legal{
+        text-align: center;
+        padding: 3% 0px;
+        border-bottom: 1px solid #d1d4db;
+    }
+
+
+
+    footer .getTheApp{
+        text-align: center;
+        padding: 3% 0px;
+    }
+
+
+    footer .getTheApp h4{
+        display: none;
+    }
+
+    footer .getTheApp .icons{
+        display: none;
+    }
+
+
+    footer .getTheApp p{
+        margin-bottom: 2%;
+    }
+
+    
+
+}
+
+
+
+
+
+@media only screen and (min-width: 910px) and (max-width: 1050px){
+        
+        /* header */
+
+    .firstList {
+        width: 100%;
+    }
+
+    .nav-toggle, .mobile-logo, .nav-close {
+        display: none;
+    }
+
+
+
+    /* Main Section */
+
+    
+
+}
+
+
+
+
+@media only screen and (min-width: 910px) and (max-width: 1100px){
+            
+        /* header */
+
+    .firstList {
+        width: 70%;
+    }   
+
+
+    .nav-toggle, .mobile-logo, .nav-close {
+        display: none;
+    }
+
+
+    /* Main section */
+        
+    }
+
+
+
+
+@media only screen and (min-width: 1100px) and (max-width: 1200px){
+        
+    /* header */
+
+    .firstList {
+        width: 50%;
+    }   
+    
+
+    .nav-toggle, .mobile-logo, .nav-close {
+        display: none;
+    }
+
+    
+}
+
+
+
+
+@media only screen and (min-width : 1200px){
+    .nav-toggle, .mobile-logo, .nav-close {
+        display: none;
+    }
+}

@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+body{
+    background-color: #FEF9FA;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.firstList {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1%;
+}
+
+.firstList li {
+    list-style: none;
+}
+
+.firstList li a {
+    text-decoration: none;
+    color: #344054;
+    font-weight: 500;
+}
+
+.firstList li a:hover{
+    color: #F33156;
+}
+
+.logoandText {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoandText img {
+    padding: 0% 8% 0% 0%;
+}
+
+.textonly {
+    color: #F33156;
+    font-weight: 700;
+}
+
+.secondList {
+    padding: 1%;
+    width: 60%;
+    position: relative;
+}
+
+.secondList a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #344054;
+}
+
+.secondList img {
+    padding: 0% .5%;
+}
+
+.language_logoandtext {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.languageText {
+    padding-right: 2%;
+}
+
+/* Popup */
+.close {
+    display: none;
+}
+
+#closeDialog {
+    cursor: pointer;
+}
+
+.popup {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    z-index: 2;
+}
+
+.popup .to_be_hidden_dialogue {
+    border-radius: 10px;
+    width: 270px;
+    background-color: #fff;
+}
+
+.popup .to_be_hidden_dialogue .topPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+}
+
+.popup .to_be_hidden_dialogue .Languagebuttons {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.popup .to_be_hidden_dialogue .Languagebuttons button {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 7%;
+    margin: 2%;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 1px 1px 1px #efd3d3;
+    background-color: white;
+    cursor: pointer;
+}
+
+.popup .to_be_hidden_dialogue .Languagebuttons .selected {
+    background-color: #F33156;
+    color: white;
+}
+
+
+
+        /* Cookie banner */
+
+#cookieConsent {
+    display: none;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 400px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+#cookieConsent button {
+    background: linear-gradient(to top, #F33383, #F33361);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+        /* Main Contact Section */
+
+.contactus_section .main_heading{
+    text-align: center;
+    font-size: xx-large;
+    color: #344054;
+    font-weight: 600;
+}
+
+
+
+.contactus_section .help_success_inquiries{
+    padding: 5%;
+}
+
+
+
+.contactus_section .help_success_inquiries .section{
+    padding: 1.5% 0%;
+}
+
+
+
+.contactus_section .help_success_inquiries .section h2{
+    color:#344054;
+    font-weight: 600;
+}
+
+.contactus_section .help_success_inquiries .section p{
+    padding: 1% 0%;
+    color:#344054;
+}
+
+.contactus_section .help_success_inquiries .section a{
+    color:#344054;
+    font-weight: 500;
+}
+
+
+
+        /* Footer */
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    color: #344054;
+    flex-wrap: wrap;
+    background-color: white;
+    border-top: 1px solid #D6D6D6;
+    padding-top: 5%;
+    margin-top: 2%;
+}
+
+footer .logoLanguageFooter{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+  
+ 
+.language-dropdown-btn {
+    margin-top: 8%;
+    width: 100%;
+    padding: 4% 10%;
+    border: none;
+    background-color: #ffffff;
+    border: 1px solid #e5e6e9;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+
+.language-dropdown-btn img {
+    margin-right: 5px;
+}
+
+
+#dropdown_icon{
+    padding-left: 35%;
+}
+
+
+.language-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.language-dropdown-content.show { 
+    opacity: 1;
+}
+
+
+.language-dropdown-content a {
+    color: #344054;
+    padding: 4% 10%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin: 5%;
+    box-shadow: 2px 2px 2px #D6D6D6;
+    border-radius: 20px;
+}
+
+
+.language-dropdown ul li{
+    list-style-type: none;
+}
+
+
+.language-dropdown ul li a:hover{
+    background-color: #F33156; 
+    color: white; 
+}
+
+
+.language-dropdown-content a.selected {
+    background-color: #F33156; 
+    color: white; 
+    border-radius: 20px;
+
+}
+
+
+
+.language-dropdown-content a:hover {
+    background-color: #ddd; 
+}
+
+
+.language-dropdown:hover .language-dropdown-content {
+    display: block;
+}
+
+
+
+footer .company ul li{
+    list-style-type: none;
+}
+
+
+footer .company ul li a{
+    text-decoration: none;
+    color: #344054;
+}
+
+
+footer .company ul li a:hover{
+    color: #F33156;
+}
+
+
+footer .community ul li{
+    list-style-type: none;
+}
+
+
+footer .community ul li a{
+    text-decoration: none;
+    color: #344054;
+}
+
+
+
+footer .community ul li a:hover{
+    color: #F33156;
+}
+
+
+footer .legal ul li{
+    list-style-type: none;
+}
+
+
+footer .legal ul li a{
+    text-decoration: none;
+    color: #344054;
+}
+
+
+footer .legal ul li a:hover{
+    color: #F33156;
+}
+
+
+
+footer .icons a img{
+    padding: 1% 1%;
+}
+
+
+footer .getTheApp p{
+    margin-bottom: 13%;
+}
+

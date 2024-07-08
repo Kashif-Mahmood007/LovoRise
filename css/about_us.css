@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+body{
+    background-color: #FEF9FA;
+}
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: transparent;
+    position: relative;
+    
+}
+
+.firstList {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1%;
+}
+
+.firstList li {
+    list-style: none;
+}
+
+.firstList li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+
+.firstList li a:hover{
+    color: #d1d4db;
+}
+
+
+.logoandText {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoandText img {
+    padding: 0% 8% 0% 0%;
+}
+
+.textonly {
+    color: white;
+    font-weight: 700;
+}
+
+.secondList {
+    padding: 1%;
+    width: 60%;
+    position: relative;
+}
+
+.secondList a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+
+
+.secondList img {
+    padding: 0% .5%;
+}
+
+.language_logoandtext {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.languageText {
+    padding-right: 2%;
+}
+
+/* Popup */
+.close {
+    display: none;
+}
+
+#closeDialog {
+    cursor: pointer;
+}
+
+.popup {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    z-index: 2;
+}
+
+.popup .to_be_hidden_dialogue {
+    border-radius: 10px;
+    width: 270px;
+    background-color: #fff;
+}
+
+.popup .to_be_hidden_dialogue .topPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    color: #344054;
+}
+
+.popup .to_be_hidden_dialogue .Languagebuttons {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.popup .to_be_hidden_dialogue .Languagebuttons button {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 7%;
+    margin: 2%;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 1px 1px 1px #efd3d3;
+    background-color: white;
+    cursor: pointer;
+}
+
+.popup .to_be_hidden_dialogue .Languagebuttons .selected {
+    background-color: #F33156;
+    color: white;
+}
+
+
+
+
+/* Cookie banner */
+
+#cookieConsent {
+    display: none;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 400px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+
+#cookieConsent button {
+    background: linear-gradient(to top, #F33383, #F33361);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+        
+
+
+
+
+        /* Main  Section */
+
+#add_about_bg_small_screens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0% 4%;
+}        
+
+.about_bg{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #F33383, #F33361, #CC3153);
+    color: white;
+}
+
+
+.aboutContent{
+    padding-right: 10%;
+}
+
+
+.aboutContent h1{
+    font-size: xxx-large;
+}
+
+
+.aboutContent p{
+    padding: 2% 0% 4% 0%;
+}
+
+
+
+    /* About us cards */
+
+.about_us_heading{
+    padding: 3% 5% 2% 5%;
+    color: #344054;
+}
+
+
+.about_boxes{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #344054;
+    margin: 0% 5%;
+}
+
+.about_boxes .about_box{
+    margin-bottom: 3%;
+}
+
+
+
+.about_boxes .about_box h4{
+    font-weight: 600;
+    padding: 3% 0% 4% 0%;
+}
+
+
+.about_boxes .about_box p{
+    width: 330px;
+    text-align: justify;
+}
+
+
+    /* Our Goal Cards */
+
+
+.our_goals_heading{
+    padding: 3% 5% 2% 5%;
+    color: #344054;
+    text-align: center;
+}
+
+
+.goal_boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #344054;
+    margin: 0% 5%;
+    /* position: relative;  */
+    
+}
+
+.goal_box {
+    position: relative; 
+}
+
+.goal_box .goal_img_below {
+    background-color: #F9E9EC;
+    position: absolute;
+    bottom: -80px;
+    left: 0; 
+    right: 0; 
+    z-index: 1; 
+    padding: 10px;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+
+
+.goal_box .goal_img_below img{
+    padding-left: 2%;
+}
+
+.goal_box .goal_img {
+    position: relative; 
+    z-index: 0;
+}
+
+
+
+.goal_boxes .goal_box{
+    margin-bottom: 10%;
+}
+
+
+
+.goal_boxes .goal_box p{
+    width: 530px;
+    text-align: justify;
+    padding: 2% 0% 2% 2%;
+}
+
+
+.padding_top_bottom_1{
+    padding: 1% 0%;
+}
+
+
+        /* Our Story */
+
+
+.story_main{
+    background: linear-gradient(to top, #F33383, #F33361);
+    width: 100%;
+}
+
+
+.story_main .our_story_heading{
+    color: white;
+    padding: 3% 0% 0% 5%;
+    font-size: large;
+}
+
+
+.story_main .paragraph_image{
+    display: flex;
+    align-items: center;
+}
+
+
+.story_main .paragraph_image img{
+    margin: 0% 3%;
+}
+
+
+.story_main .paragraph_image p{
+    color: #344054;
+    width: 70%;
+    background-color: white;
+    margin: 3%;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+
+
+        /* Why choose LovoRise */
+
+.main_why_us{
+    padding: 6% 3% 0% 3%;
+    color: #344054;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+
+.main_why_us h2{
+    font-weight: 600;
+} 
+
+
+.main_why_us p{
+    padding: 3% 6%;
+}
+
+
+.main_why_us button{
+    text-align: center;
+    padding: 1% 2.5%;
+    background: linear-gradient(to top, #F33383, #F33361);
+    border: 0px;
+    border-radius: 16px;
+}
+
+
+.main_why_us button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+        /* Footer */
+
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: #344054;
+    flex-wrap: wrap;
+    background-color: white;
+    border-bottom: 1px solid #e5e6e9;
+    border-top: 1px solid #D6D6D6;
+    padding-top: 5%;
+    margin-top: 2%;
+}
+
+footer .logoLanguageFooter{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+ 
+.language-dropdown-btn {
+    margin-top: 8%;
+    width: 100%;
+    padding: 4% 10%;
+    border: none;
+    background-color: #ffffff;
+    border: 1px solid #e5e6e9;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+
+.language-dropdown-btn img {
+    margin-right: 5px;
+}
+
+
+#dropdown_icon{
+    padding-left: 35%;
+}
+
+
+
+.language-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.language-dropdown-content.show { 
+    opacity: 1;
+}
+
+
+
+.language-dropdown-content a {
+    color: #344054;
+    padding: 4% 10%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin: 5%;
+    box-shadow: 2px 2px 2px #D6D6D6;
+    border-radius: 20px;
+}
+
+
+.language-dropdown ul li{
+    list-style-type: none;
+}
+
+
+.language-dropdown ul li a:hover{
+    background-color: #F33156; 
+    color: white; 
+}
+
+
+.language-dropdown-content a.selected {
+    background-color: #F33156; 
+    color: white; 
+    border-radius: 20px;
+
+}
+
+
+.language-dropdown-content a:hover {
+    background-color: #ddd; 
+}
+
+
+.language-dropdown:hover .language-dropdown-content {
+    display: block;
+}
+
+
+
+footer .company ul li{
+    list-style-type: none;
+}
+
+
+footer .company ul li a{
+    text-decoration: none;
+    color: #344054;
+}
+
+
+footer .company ul li a:hover{
+    color: #F33156;
+}
+
+
+footer .community ul li{
+    list-style-type: none;
+}
+
+
+footer .community ul li a{
+    text-decoration: none;
+    color: #344054;
+}
+
+
+
+footer .community ul li a:hover{
+    color: #F33156;
+}
+
+
+footer .legal ul li{
+    list-style-type: none;
+}
+
+
+footer .legal ul li a{
+    text-decoration: none;
+    color: #344054;
+}
+
+
+footer .legal ul li a:hover{
+    color: #F33156;
+}
+
+
+
+footer .icons a img{
+    padding: 1% 1%;
+}
+
+
+footer .getTheApp p{
+    margin-bottom: 13%;
+}
+
+
+
+
+.footer_small_screen{
+    width: 100%;
+    background: linear-gradient(#F33367, #F33381);
+    height: 13vh;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.footer_small_screen h3{
+    color: white;
+}
+
+.footer_small_screen button{
+    padding: 4px 12px;
+    border-radius: 20px;
+    background-color: white;
+    border: 0px;
+}
+
+.footer_small_screen button a{
+    text-decoration: none;
+    color: #F33156;
+}
+
+

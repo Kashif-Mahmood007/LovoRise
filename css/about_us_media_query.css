@@ -1,0 +1,1631 @@
+@media only screen and (max-width: 368px){
+        
+    /* header */
+
+    
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    
+}
+
+.firstList {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1%;
+}
+
+.firstList li {
+    list-style: none;
+}
+
+.firstList li a {
+    text-decoration: none;
+    color: #344054;
+    font-weight: 500;
+}
+
+
+.firstList li a:hover{
+    color: #F33156;
+}
+
+.logoandText {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoandText img {
+    padding: 0% 8% 0% 0%;
+}
+
+.textonly {
+    color: #F33156;
+    font-weight: 700;
+}
+
+.secondList {
+    padding: 1%;
+    width: 60%;
+    position: relative;
+}
+
+.secondList a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #344054;
+}
+
+
+
+    .nav-toggle,
+    .mobile-logo,
+    .nav-close {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 10px;
+    }
+
+    .mobile-logo {
+        left: 10px;
+        top: 4px;
+    }
+
+    .mobile-logo .textonly {
+        margin-left: 10px;
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    .nav-toggle {
+        right: 16px;
+        top: 16px;
+    }
+
+    .nav-close {
+        display: none;
+        right: 10px;
+        z-index: 2;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white!;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .nav-visible {
+        display: flex;
+    }
+
+    nav.nav-visible .language_logoandtext img {
+        content: url('../images/language_icon.png');
+    }
+
+    .nav-toggle.nav-visible~.nav-close {
+        display: flex;
+    }
+
+    .nav-toggle i,
+    .nav-close i {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .firstList,
+    .secondList {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+    }
+
+    .firstList li {
+        margin-bottom: 10px;
+    }
+
+    .language_logoandtext {
+        justify-content: center;
+    }
+
+    .popup {
+        position: absolute;
+        right: 11%;
+        top: 20%;
+        z-index: 3;
+        justify-content: center;
+    } 
+
+
+    
+    /* Cookie banner */
+
+    #cookieConsent {
+        display: none !important;
+    }
+
+    
+
+    /* Main  Section */
+
+    #add_about_bg_small_screens{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0% 0%;
+    }        
+    
+    
+    
+    .aboutContent{
+        padding-right: 0%;
+        padding: 8% 0%;
+    }
+
+
+    .aboutContent .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .aboutContent h1{
+        font-size: xx-large;
+    }
+
+
+    .about_us_heading{
+        padding: 7% 5% 8% 5%;
+    }
+
+    .about_boxes .about_box{
+        margin-bottom: 7%;
+    }
+
+    
+
+
+    /* Our Goal cards */
+
+        
+
+    .vision_card > img{
+        content: url('../images/about_us_vision_small_devices.png');
+        height: auto;
+        width: auto;
+    }
+    
+    .mission_card > img{
+        content: url('../images/about_us_mission_small_devices.png');
+        height: auto;
+        width: auto;
+    }
+
+    .vision_card{
+        margin: 36% 0%;
+    }
+    
+ 
+    .goal_box .goal_img_below {
+        position: absolute;
+        bottom: -180px;
+       
+    }
+        
+    
+    .goal_boxes .goal_box p{
+        width: 290px;
+    }
+    
+
+    .goal_boxes .goal_box{
+        margin-bottom: 37%;
+    }
+    
+
+
+    /* Our Story */
+
+
+    .story_main{
+        margin-top: 33%;
+    }
+
+    .paragraph_image img{
+        display: none;
+    }
+
+    
+    .story_main .paragraph_image p{
+        width: 100%;
+        margin: 6%;
+        padding: 5%;
+    }
+
+     /* Why choose LovoRise */
+
+     .main_why_us{
+        padding:7% 0% 0% 5%;
+    }
+
+
+    .main_why_us{
+        margin-bottom: 0%;
+    }
+
+
+    
+    .main_why_us button{
+        margin-top: 3%;
+        padding: 3% 5.1%;
+        border-radius: 16px;
+    }
+
+    
+    /* Footer */
+
+
+
+    footer{
+        display: block;
+    }
+
+
+    footer .logoLanguageFooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    footer .logoLanguageFooter img{
+        margin-left: 12%;
+    }
+
+    .language-dropdown-btn {
+        text-align: center;
+        width: 160%;
+    }
+
+
+    .language-dropdown-content {
+        padding: 1% 5%;
+        width: 160%;
+    }
+
+
+        
+    .language-dropdown {
+        position: relative;
+        display: inline-block;
+        left: -20px;
+    }
+
+
+    #dropdown_icon{
+        margin-left: -22%;
+    }
+    
+
+    .language-dropdown ul li {
+        list-style-type: none;
+    }
+    
+
+    footer .company{
+        text-align: center;
+        padding: 5% 0px;
+    }
+
+
+    footer .community{
+        text-align: center;
+        padding: 5% 0px;
+        border: 1px solid #d1d4db;
+    }
+    
+    
+    footer .legal{
+        text-align: center;
+        padding: 5% 0px;
+        border-bottom: 1px solid #d1d4db;
+    }
+
+
+
+    footer .getTheApp{
+        text-align: center;
+        padding: 5% 0px;
+    }
+
+
+    footer .getTheApp h4{
+        display: none;
+    }
+
+    footer .getTheApp .icons{
+        display: none;
+    }
+
+
+    footer .getTheApp p{
+        margin-bottom: 2%;
+    }
+
+
+
+    .footer_small_screen{
+        display: flex;
+        height: 8vh;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 368px) and (max-width: 450px){
+    
+    /* header */
+
+    .nav-toggle,
+    .mobile-logo,
+    .nav-close {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 10px;
+    }
+
+    .mobile-logo {
+        left: 10px;
+        top: 4px;
+    }
+
+    .mobile-logo .textonly {
+        margin-left: 10px;
+        font-size: 18px;
+        display: inline-block;
+        color: #F33156;
+    }
+
+
+    .firstList li a {
+        color: #344054;
+    }
+
+
+    .secondList a {
+        color: #344054;
+    }
+
+    .textonly {
+        color: #F33156;
+    }
+    
+
+
+    .nav-toggle {
+        right: 16px;
+        top: 16px;
+    }
+
+    .nav-close {
+        display: none;
+        right: 10px;
+        z-index: 2;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .nav-visible {
+        display: flex;
+    }
+
+    nav.nav-visible .language_logoandtext img {
+        content: url('../images/language_icon.png');
+    }
+
+    .nav-toggle.nav-visible~.nav-close {
+        display: flex;
+    }
+
+    .nav-toggle i,
+    .nav-close i {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .firstList,
+    .secondList {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+    }
+
+    .firstList li {
+        margin-bottom: 10px;
+    }
+
+    .language_logoandtext {
+        justify-content: center;
+    }
+
+    .popup {
+        position: absolute;
+        right: 18%;
+        top: 20.3%;
+        z-index: 3;
+        justify-content: center;
+    } 
+
+
+    
+    
+    /* Cookie banner */
+
+    #cookieConsent {
+        display: none !important;
+    }
+
+
+
+        /* Main  Section */
+
+    #add_about_bg_small_screens{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0% 0%;
+    }        
+    
+    
+    
+    .aboutContent{
+        padding-right: 0%;
+        padding: 5% 0%;
+    }
+
+
+    .aboutContent .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .about_us_heading{
+        padding: 4% 5% 5% 5%;
+    }
+
+
+    .about_boxes .about_box{
+        margin-bottom: 7%;
+    }
+
+
+
+
+    /* Our Goal cards */
+
+        
+
+    .vision_card > img{
+        content: url('../images/about_us_vision_small_devices.png');
+        height: auto;
+        width: auto;
+    }
+    
+    .mission_card > img{
+        content: url('../images/about_us_mission_small_devices.png');
+        height: auto;
+        width: auto;
+    }
+
+    .vision_card{
+        margin: 20% 0%;
+    }
+    
+ 
+    .goal_box .goal_img_below {
+        position: absolute;
+        bottom: -180px;
+       
+    }
+        
+    
+    .goal_boxes .goal_box p{
+        width: 290px;
+    }
+    
+
+    .goal_boxes .goal_box{
+        margin-bottom: 37%;
+    }
+
+
+    
+    /* Our Story */
+
+    .story_main{
+        margin-top: 20%;
+    }
+
+    .paragraph_image img{
+        display: none;
+    }
+
+    
+    .story_main .paragraph_image p{
+        width: 100%;
+        margin: 6%;
+        padding: 5%;
+    }
+
+
+     /* Why choose LovoRise */
+
+     .main_why_us{
+        padding: 6% 0% 0% 5%;
+    }
+
+    .main_why_us{
+        margin-bottom: 0%;
+    }
+
+    
+    .main_why_us button{
+        margin-top: 3%;
+        padding: 2.7% 4.1%;
+        border-radius: 16px;
+    }
+   
+
+    /* Footer */
+
+
+
+    footer{
+        display: block;
+    }
+
+
+    footer .logoLanguageFooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    footer .logoLanguageFooter img{
+        margin-left: 12%;
+    }
+
+    .language-dropdown-btn {
+        text-align: center;
+        width: 160%;
+    }
+
+
+    .language-dropdown-content {
+        padding: 1% 5%;
+        width: 160%;
+    }
+
+
+        
+    .language-dropdown {
+        position: relative;
+        display: inline-block;
+        left: -20px;
+    }
+
+
+    #dropdown_icon{
+        margin-left: -22%;
+    }
+    
+
+    .language-dropdown ul li {
+        list-style-type: none;
+    }
+    
+    
+
+    footer .company{
+        text-align: center;
+        padding: 3% 0px;
+    }
+
+
+    footer .community{
+        text-align: center;
+        padding: 3% 0px;
+        border: 1px solid #d1d4db;
+    }
+    
+    
+    footer .legal{
+        text-align: center;
+        padding: 3% 0px;
+        border-bottom: 1px solid #d1d4db;
+    }
+
+
+
+    footer .getTheApp{
+        text-align: center;
+        padding: 3% 0px;
+    }
+
+
+    footer .getTheApp h4{
+        display: none;
+    }
+
+    footer .getTheApp .icons{
+        display: none;
+    }
+
+
+    footer .getTheApp p{
+        margin-bottom: 2%;
+    }
+
+
+
+    .footer_small_screen{
+        display: flex;
+        height: 10vh;
+    }
+    
+
+   
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 450px) and (max-width: 623px){
+    
+    /* header */
+
+    .nav-toggle,
+    .mobile-logo,
+    .nav-close {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 10px;
+    }
+
+    .mobile-logo {
+        left: 10px;
+        top: 4px;
+    }
+
+    .mobile-logo .textonly {
+        margin-left: 10px;
+        font-size: 18px;
+        display: inline-block;
+        color: #F33156;
+    }
+
+
+    .firstList li a {
+        color: #344054;
+    }
+
+
+    .secondList a {
+        color: #344054;
+    }
+
+    .textonly {
+        color: #F33156;
+    }
+    
+
+
+    .nav-toggle {
+        right: 16px;
+        top: 16px;
+    }
+
+    .nav-close {
+        display: none;
+        right: 10px;
+        z-index: 2;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .nav-visible {
+        display: flex;
+    }
+
+    nav.nav-visible .language_logoandtext img {
+        content: url('../images/language_icon.png');
+    }
+
+    .nav-toggle.nav-visible~.nav-close {
+        display: flex;
+    }
+
+    .nav-toggle i,
+    .nav-close i {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .firstList,
+    .secondList {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+    }
+
+    .firstList li {
+        margin-bottom: 10px;
+    }
+
+    .language_logoandtext {
+        justify-content: center;
+    }
+
+    .popup {
+        position: absolute;
+        right: 18%;
+        top: 21%;
+        z-index: 3;
+        justify-content: center;
+    } 
+
+
+
+       
+    /* Cookie banner */
+
+    #cookieConsent {
+        display: none !important;
+    }
+
+
+
+        /* Main  Section */
+
+    #add_about_bg_small_screens{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0% 0%;
+    }        
+    
+    
+    
+    .aboutContent{
+        padding-right: 0%;
+        padding: 5% 0%;
+    }
+
+
+    .aboutContent .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .about_us_heading{
+        padding: 4% 5% 5% 5%;
+    }
+
+
+    .about_boxes .about_box{
+        margin-bottom: 7%;
+    }
+
+
+
+
+    /* Our Goal cards */
+
+        
+
+    .vision_card > img{
+        content: url('../images/about_us_vision_small_devices.png');
+        height: auto;
+        width: auto;
+    }
+    
+    .mission_card > img{
+        content: url('../images/about_us_mission_small_devices.png');
+        height: auto;
+        width: auto;
+    }
+
+    .vision_card{
+        margin: 12% 0%;
+    }
+    
+ 
+    .goal_box .goal_img_below {
+        position: absolute;
+        bottom: -180px;
+       
+    }
+        
+    
+    .goal_boxes .goal_box p{
+        width: 290px;
+    }
+    
+
+    .goal_boxes .goal_box{
+        margin-bottom: 37%;
+    }
+
+
+
+    
+    /* Our Story */
+
+
+    .story_main{
+        margin-top: 11%;
+    }
+
+    .paragraph_image img{
+        display: none;
+    }
+
+    
+    .story_main .paragraph_image p{
+        width: 100%;
+        margin: 6%;
+        padding: 5%;
+    }
+
+
+    /* Why choose LovoRise */
+
+    .main_why_us{
+        padding: 5% 0% 0% 5%;
+    }
+
+    .main_why_us{
+        margin-bottom: 0%;
+    }
+
+
+    .main_why_us button{
+        margin-top: 3%;
+        padding: 2.2% 4.1%;
+        border-radius: 16px;
+    }
+   
+   
+
+    /* Footer */
+
+
+
+    footer{
+        display: block;
+    }
+
+
+    footer .logoLanguageFooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    footer .logoLanguageFooter img{
+        margin-left: 12%;
+    }
+
+    .language-dropdown-btn {
+        text-align: center;
+        width: 160%;
+    }
+
+
+    .language-dropdown-content {
+        padding: 1% 5%;
+        width: 160%;
+    }
+
+
+        
+    .language-dropdown {
+        position: relative;
+        display: inline-block;
+        left: -20px;
+    }
+
+
+    #dropdown_icon{
+        margin-left: -22%;
+    }
+    
+
+    .language-dropdown ul li {
+        list-style-type: none;
+    }
+    
+
+    footer .company{
+        text-align: center;
+        padding: 3% 0px;
+    }
+
+
+    footer .community{
+        text-align: center;
+        padding: 3% 0px;
+        border: 1px solid #d1d4db;
+    }
+    
+    
+    footer .legal{
+        text-align: center;
+        padding: 3% 0px;
+        border-bottom: 1px solid #d1d4db;
+    }
+
+
+
+    footer .getTheApp{
+        text-align: center;
+        padding: 3% 0px;
+    }
+
+
+    footer .getTheApp h4{
+        display: none;
+    }
+
+    footer .getTheApp .icons{
+        display: none;
+    }
+
+
+    footer .getTheApp p{
+        margin-bottom: 2%;
+    }
+
+    
+    .footer_small_screen{
+        display: flex;
+        height: 10vh;
+    }
+   
+}
+
+
+
+
+
+@media only screen and (min-width: 623px) and (max-width: 767px){
+    
+    /* header */
+
+    .nav-toggle,
+    .mobile-logo,
+    .nav-close {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 10px;
+    }
+
+    .mobile-logo {
+        left: 10px;
+        top: 4px;
+    }
+
+    .mobile-logo .textonly {
+        margin-left: 10px;
+        font-size: 18px;
+        display: inline-block;
+        color: #F33156;
+    }
+
+
+    .firstList li a {
+        color: #344054;
+    }
+
+
+    .secondList a {
+        color: #344054;
+    }
+
+    .textonly {
+        color: #F33156;
+    }
+    
+
+
+    .nav-toggle {
+        right: 16px;
+        top: 16px;
+    }
+
+    .nav-close {
+        display: none;
+        right: 10px;
+        z-index: 2;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .nav-visible {
+        display: flex;
+    }
+
+    nav.nav-visible .language_logoandtext img {
+        content: url('../images/language_icon.png');
+    }
+
+    .nav-toggle.nav-visible~.nav-close {
+        display: flex;
+    }
+
+    .nav-toggle i,
+    .nav-close i {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .firstList,
+    .secondList {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+    }
+
+    .firstList li {
+        margin-bottom: 10px;
+    }
+
+    .language_logoandtext {
+        justify-content: center;
+    }
+
+    .popup {
+        position: absolute;
+        right: 18%;
+        top: 21.5%;
+        z-index: 3;
+        justify-content: center;
+    } 
+
+
+       
+    /* Cookie banner */
+
+    #cookieConsent {
+        display: none !important;
+    }
+
+
+
+        /* Main  Section */
+
+    #add_about_bg_small_screens{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0% 0%;
+    }        
+    
+    
+    
+    .aboutContent{
+        padding-right: 0%;
+        padding: 5% 0%;
+    }
+
+
+    .aboutContent .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .about_us_heading{
+        padding: 4% 5% 5% 5%;
+    }
+
+
+    .about_boxes .about_box{
+        margin-bottom: 7%;
+    }
+
+
+
+
+    /* Our Goal cards */
+
+        
+
+    .vision_card > img{
+        content: url('../images/about_us_vision_small_devices.png');
+        height: auto;
+        width: auto;
+    }
+    
+    .mission_card > img{
+        content: url('../images/about_us_mission_small_devices.png');
+        height: auto;
+        width: auto;
+    }
+
+    .vision_card{
+        margin: 0% 0%;
+    }
+
+    
+ 
+    .goal_box .goal_img_below {
+        position: absolute;
+        bottom: -165px;
+       
+    }
+        
+    
+    .goal_boxes .goal_box p{
+        width: 290px;
+    }
+    
+
+    .goal_boxes .goal_box{
+        margin-bottom: 33%;
+    }
+
+
+
+    
+    /* Our Story */
+
+    .paragraph_image img{
+        display: none;
+    }
+
+    
+    .story_main .paragraph_image p{
+        width: 100%;
+        margin: 6%;
+        padding: 5%;
+    }
+
+
+
+    /* Why Choose LovoRise */
+   
+    .main_why_us button{
+        margin-top: 1%;
+        padding: 2% 4.1%;
+        border-radius: 16px;
+    }
+
+
+    /* Footer */
+
+
+
+    footer{
+        display: block;
+    }
+
+
+    footer .logoLanguageFooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    footer .logoLanguageFooter img{
+        margin-left: 12%;
+    }
+
+    .language-dropdown-btn {
+        text-align: center;
+        width: 160%;
+    }
+
+
+    .language-dropdown-content {
+        padding: 1% 5%;
+        width: 160%;
+    }
+
+
+        
+    .language-dropdown {
+        position: relative;
+        display: inline-block;
+        left: -20px;
+    }
+
+
+    #dropdown_icon{
+        margin-left: -22%;
+    }
+    
+
+    .language-dropdown ul li {
+        list-style-type: none;
+    }
+    
+
+    footer .company{
+        text-align: center;
+        padding: 3% 0px;
+    }
+
+
+    footer .community{
+        text-align: center;
+        padding: 3% 0px;
+        border: 1px solid #d1d4db;
+    }
+    
+    
+    footer .legal{
+        text-align: center;
+        padding: 3% 0px;
+        border-bottom: 1px solid #d1d4db;
+    }
+
+
+
+    footer .getTheApp{
+        text-align: center;
+        padding: 3% 0px;
+    }
+
+
+    footer .getTheApp h4{
+        display: none;
+    }
+
+    footer .getTheApp .icons{
+        display: none;
+    }
+
+
+    footer .getTheApp p{
+        margin-bottom: 2%;
+    }
+
+    
+
+    .footer_small_screen{
+        display: flex;
+        height: 10vh;
+    }
+   
+}
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 910px){
+    
+    /* Header */
+
+    .firstList {
+        width: 100%;
+    }
+
+    .nav-toggle, .mobile-logo, .nav-close {
+        display: none;
+    }
+
+
+    
+    
+    
+    /* Main  Section */
+    
+    
+    
+    .aboutContent{
+        padding-right: 00%;
+        padding-left: 5%;
+    }
+    
+    
+    .goal_boxes .goal_box{
+        margin-bottom: 17%;
+    }
+
+
+    
+    /* Our Story */
+
+    .paragraph_image img{
+        display: none;
+    }
+
+    
+    .story_main .paragraph_image p{
+        width: 100%;
+        margin: 6%;
+        padding: 5%;
+    }
+
+
+    /* Why choose LovoRise */
+
+    .main_why_us button{
+        padding: 1.5% 3.1%;
+        border-radius: 16px;
+    }
+
+
+    /* Footer */
+
+
+
+    footer{
+        display: block;
+        margin-top: 8%;
+    }
+
+
+    footer .logoLanguageFooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    footer .logoLanguageFooter img{
+        margin-left: 12%;
+    }
+
+    .language-dropdown-btn {
+        text-align: center;
+        width: 160%;
+    }
+
+
+    .language-dropdown-content {
+        padding: 1% 5%;
+        width: 160%;
+    }
+
+
+        
+    .language-dropdown {
+        position: relative;
+        display: inline-block;
+        left: -20px;
+    }
+
+
+    #dropdown_icon{
+        margin-left: -22%;
+    }
+    
+
+    .language-dropdown ul li {
+        list-style-type: none;
+    }
+    
+    
+
+    footer .company{
+        text-align: center;
+        padding: 3% 0px;
+    }
+
+
+    footer .community{
+        text-align: center;
+        padding: 3% 0px;
+        border: 1px solid #d1d4db;
+    }
+    
+    
+    footer .legal{
+        text-align: center;
+        padding: 3% 0px;
+        border-bottom: 1px solid #d1d4db;
+    }
+
+
+
+    footer .getTheApp{
+        text-align: center;
+        padding: 3% 0px;
+    }
+
+
+    footer .getTheApp h4{
+        display: none;
+    }
+
+    footer .getTheApp .icons{
+        display: none;
+    }
+
+
+    footer .getTheApp p{
+        margin-bottom: 2%;
+    }
+
+    
+
+    
+
+}
+
+
+
+
+
+@media only screen and (min-width: 910px) and (max-width: 1050px){
+        
+        /* header */
+
+        .firstList {
+            width: 100%;
+        }
+
+        .nav-toggle, .mobile-logo, .nav-close {
+            display: none;
+        }
+
+    
+        /* Main  Section */
+
+
+
+        .aboutContent{
+            padding-right: 00%;
+            padding-left: 5%;
+        }
+        
+        .goal_boxes .goal_box{
+            margin-bottom: 15%;
+        }
+
+
+        /* Why choose LovoRise */
+
+        .main_why_us button{
+            padding: 1.3% 2.5%;
+            border-radius: 16px;
+        }
+
+    }
+
+
+
+
+@media only screen and (min-width: 910px) and (max-width: 1100px){
+            
+        /* header */
+
+        .firstList {
+            width: 70%;
+        }   
+
+
+        .nav-toggle, .mobile-logo, .nav-close {
+            display: none;
+        }
+            
+        
+        /* Main  Section */
+
+        .aboutContent{
+            padding-right: 00%;
+            padding-left: 5%;
+        }
+
+        .goal_boxes .goal_box{
+            margin-bottom: 15%;
+        }
+
+
+        /* Why choose LovoRise */
+
+        .main_why_us button{
+            padding: 1.3% 2.5%;
+            border-radius: 16px;
+        }
+    }
+
+
+
+
+@media only screen and (min-width: 1100px) and (max-width: 1200px){
+        
+    /* header */
+
+    .firstList {
+        width: 50%;
+    }   
+    
+
+    .nav-toggle, .mobile-logo, .nav-close {
+        display: none;
+    }
+
+    .goal_boxes .goal_box{
+        margin-bottom: 12%;
+    }
+
+    
+}
+
+
+
+
+@media only screen and (min-width : 1200px){
+    .nav-toggle, .mobile-logo, .nav-close {
+        display: none;
+    }
+} 
