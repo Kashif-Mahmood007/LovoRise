@@ -347,10 +347,12 @@
 
     // Cookie Banner 
 
+    // Cookie Banner 
+    
+
     document.addEventListener("DOMContentLoaded", function() {
         var cookieConsent = document.getElementById('cookieConsent');
-        var acceptCookiesButton = document.getElementById('acceptCookies');
-        var footerSmallScreen = document.querySelector('.footer_small_screen');
+        var acceptCookiesButton = document.getElementById('acceptCookies')
 
         function setCookie(name, value, days) { 
             var expires = "";
@@ -380,14 +382,8 @@
                 } else {
                     cookieConsent.style.display = 'none';
                 }
-                footerSmallScreen.style.display = 'none';
             } 
             else {
-                if (getCookie('cookiesAccepted')) {
-                    footerSmallScreen.style.display = 'flex';
-                } else {
-                    footerSmallScreen.style.display = 'none';
-                }
                 cookieConsent.style.display = 'none';
             }
         }
@@ -401,7 +397,6 @@
             checkCookies();
         });
     });
-
 
 
 
