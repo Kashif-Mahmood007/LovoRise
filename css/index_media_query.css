@@ -27,7 +27,9 @@ nav {
 .firstList li a {
     text-decoration: none;
     color: #344054;
-    font-weight: 500;
+    font-weight: 600;
+    margin-left: 18px;
+    margin-top: 3%;
 }
 
 
@@ -76,7 +78,7 @@ nav {
 
     .mobile-logo {
         left: 10px;
-        top: 4px;
+        top: 10px;
     }
 
     .mobile-logo .textonly {
@@ -87,7 +89,7 @@ nav {
 
     .nav-toggle {
         right: 16px;
-        top: 16px;
+        top: 21px;
     }
 
     .nav-close {
@@ -112,7 +114,6 @@ nav {
     .nav-visible {
         display: flex;
     }
-    
 
     nav.nav-visible .language_logoandtext img {
         content: url('../images/language_icon.png');
@@ -120,6 +121,12 @@ nav {
 
     .nav-toggle.nav-visible~.nav-close {
         display: flex;
+        margin-top: 1.5%;
+    }
+
+    
+    .listItem{
+        padding-top: 8%;
     }
 
     .nav-toggle i,
@@ -128,12 +135,17 @@ nav {
         cursor: pointer;
     }
 
-    .firstList,
-    .secondList {
+    .firstList{
         width: 100%;
         display: flex;
         flex-direction: column;
         padding: 1%;
+        align-items: flex-start;
+    }
+
+
+    .secondList {
+        display: none;
     }
 
     .firstList li {
@@ -143,7 +155,7 @@ nav {
     .language_logoandtext {
         justify-content: center;
     }
-
+    
     .popup {
         position: absolute;
         right: 11%;
@@ -164,12 +176,29 @@ nav {
     /* Main Contact Section */
 
 
+    .home_bg{
+        position: relative; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+
+
+    .home_bg .brief_desc {
+        text-align: center; 
+    }
+
 
     .home_bg .centerContent .buttons{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: baseline;
+    }
+
+    .home_bg .centerContent h2{
+        padding: 2% 0%;
+        text-align: center;
     }
 
 
@@ -271,10 +300,7 @@ nav {
 
 
     /* After Footer */
-
-    .afterFooter{
-        display: none;
-    }
+    
 
     .footer_small_screen{
         display: flex;
@@ -308,7 +334,7 @@ nav {
 
     .mobile-logo {
         left: 10px;
-        top: 4px;
+        top: 10px;
     }
 
     .mobile-logo .textonly {
@@ -321,6 +347,9 @@ nav {
 
     .firstList li a {
         color: #344054;
+        font-weight: 600;
+        margin-left: 18px;
+        margin-top: 3%;
     }
 
 
@@ -336,7 +365,7 @@ nav {
 
     .nav-toggle {
         right: 16px;
-        top: 16px;
+        top: 21px;
     }
 
     .nav-close {
@@ -368,6 +397,12 @@ nav {
 
     .nav-toggle.nav-visible~.nav-close {
         display: flex;
+        margin-top: 1.5%;
+    }
+
+        
+    .listItem{
+        padding-top: 8%;
     }
 
     .nav-toggle i,
@@ -376,12 +411,16 @@ nav {
         cursor: pointer;
     }
 
-    .firstList,
-    .secondList {
+    .firstList{
         width: 100%;
         display: flex;
         flex-direction: column;
         padding: 1%;
+        align-items: flex-start;
+    }
+
+    .secondList {
+       display: none;
     }
 
     .firstList li {
@@ -391,6 +430,7 @@ nav {
     .language_logoandtext {
         justify-content: center;
     }
+
 
     .popup {
         position: absolute;
@@ -411,8 +451,28 @@ nav {
 
     /* Main Contact Section */
 
+
+    .home_bg{
+        /* position: relative;  */
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+
+
+    .home_bg .brief_desc {
+        text-align: center; 
+        padding-right: 10%;
+    }
+
     .home_bg .centerContent{
         height: 80vh;
+    }
+
+
+    .home_bg .centerContent h2{
+        padding: 2.5% 0%;
+        text-align: center;
     }
     
     /* Footer */
@@ -509,9 +569,6 @@ nav {
 
     /* After Footer */
 
-    .afterFooter{
-        display: none;
-    }
 
     .footer_small_screen{
         display: flex;
@@ -652,6 +709,11 @@ nav {
         padding: 5% 15%;
     }       
 
+
+    .footer_small_screen{
+        display: none;
+    }
+
 }
 
 
@@ -670,6 +732,10 @@ nav {
         display: none;
     }
 
+    .footer_small_screen{  
+        display: none;
+    }
+
     }
 
 
@@ -685,6 +751,10 @@ nav {
 
 
     .nav-toggle, .mobile-logo, .nav-close {
+        display: none;
+    }
+
+    .footer_small_screen{  
         display: none;
     }
         
@@ -706,14 +776,53 @@ nav {
         display: none;
     }
 
+    .footer_small_screen{  
+        display: none;
+    }
+
+    
+}
+
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px){
+        
+    /* header */
+
+    .firstList {
+        width: 40%;
+    }   
+    
+
+    .nav-toggle, .mobile-logo, .nav-close {
+        display: none;
+    }
+
+    .goal_boxes .goal_box{
+        margin-bottom: 12%;
+    }
+
+
+    .secondList{
+        width: 65%;
+    }
     
 }
 
 
 
 
-@media only screen and (min-width : 1200px){
+@media only screen and (min-width : 1400px){
     .nav-toggle, .mobile-logo, .nav-close {
         display: none;
     }
-}
+
+    .firstList {
+        width: 35%;
+    }   
+
+
+    .secondList{
+        width: 65%;
+    }
+} 

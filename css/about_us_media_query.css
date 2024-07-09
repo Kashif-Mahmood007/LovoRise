@@ -27,7 +27,9 @@ nav {
 .firstList li a {
     text-decoration: none;
     color: #344054;
-    font-weight: 500;
+    font-weight: 600;
+    margin-left: 18px;
+    margin-top: 3%;
 }
 
 
@@ -76,7 +78,7 @@ nav {
 
     .mobile-logo {
         left: 10px;
-        top: 4px;
+        top: 10px;
     }
 
     .mobile-logo .textonly {
@@ -87,7 +89,7 @@ nav {
 
     .nav-toggle {
         right: 16px;
-        top: 16px;
+        top: 21px;
     }
 
     .nav-close {
@@ -119,6 +121,12 @@ nav {
 
     .nav-toggle.nav-visible~.nav-close {
         display: flex;
+        margin-top: 1.5%;
+    }
+
+    
+    .listItem{
+        padding-top: 8%;
     }
 
     .nav-toggle i,
@@ -127,12 +135,17 @@ nav {
         cursor: pointer;
     }
 
-    .firstList,
-    .secondList {
+    .firstList{
         width: 100%;
         display: flex;
         flex-direction: column;
         padding: 1%;
+        align-items: flex-start;
+    }
+
+
+    .secondList {
+        display: none;
     }
 
     .firstList li {
@@ -185,7 +198,8 @@ nav {
     
 
     .aboutContent h1{
-        font-size: xx-large;
+        font-size: 34px;
+        font-weight: 600;
     }
 
 
@@ -271,8 +285,9 @@ nav {
 
     
     .main_why_us button{
+        margin-bottom: 3%;
         margin-top: 3%;
-        padding: 3% 5.1%;
+        padding: 2.3% 5.1%;
         border-radius: 16px;
     }
 
@@ -394,7 +409,7 @@ nav {
 
     .mobile-logo {
         left: 10px;
-        top: 4px;
+        top: 10px;
     }
 
     .mobile-logo .textonly {
@@ -407,6 +422,9 @@ nav {
 
     .firstList li a {
         color: #344054;
+        font-weight: 600;
+        margin-left: 18px;
+        margin-top: 3%;
     }
 
 
@@ -422,7 +440,7 @@ nav {
 
     .nav-toggle {
         right: 16px;
-        top: 16px;
+        top: 21px;
     }
 
     .nav-close {
@@ -454,6 +472,13 @@ nav {
 
     .nav-toggle.nav-visible~.nav-close {
         display: flex;
+        margin-top: 1.5%;
+    }
+
+
+        
+    .listItem{
+        padding-top: 8%;
     }
 
     .nav-toggle i,
@@ -462,12 +487,16 @@ nav {
         cursor: pointer;
     }
 
-    .firstList,
-    .secondList {
+    .firstList{
         width: 100%;
         display: flex;
         flex-direction: column;
         padding: 1%;
+        align-items: flex-start;
+    }
+
+    .secondList {
+       display: none;
     }
 
     .firstList li {
@@ -517,6 +546,11 @@ nav {
     .aboutContent .buttons{
         display: flex;
         flex-direction: column;
+    }
+
+    .aboutContent h1{
+        font-size: 38px;
+        font-weight: 600;
     }
     
 
@@ -602,7 +636,8 @@ nav {
     
     .main_why_us button{
         margin-top: 3%;
-        padding: 2.7% 4.1%;
+        margin-bottom: 3%;
+        padding: 2.2% 5.1%;
         border-radius: 16px;
     }
    
@@ -730,7 +765,7 @@ nav {
 
     .mobile-logo {
         left: 10px;
-        top: 4px;
+        top: 10px;
     }
 
     .mobile-logo .textonly {
@@ -743,6 +778,9 @@ nav {
 
     .firstList li a {
         color: #344054;
+        font-weight: 600;
+        margin-left: 18px;
+        margin-top: 3%;
     }
 
 
@@ -758,7 +796,7 @@ nav {
 
     .nav-toggle {
         right: 16px;
-        top: 16px;
+        top: 21px;
     }
 
     .nav-close {
@@ -790,6 +828,13 @@ nav {
 
     .nav-toggle.nav-visible~.nav-close {
         display: flex;
+        margin-top: 1.5%;
+    }
+
+
+        
+    .listItem{
+        padding-top: 8%;
     }
 
     .nav-toggle i,
@@ -798,12 +843,18 @@ nav {
         cursor: pointer;
     }
 
-    .firstList,
-    .secondList {
+    
+    .firstList{
         width: 100%;
         display: flex;
         flex-direction: column;
         padding: 1%;
+        align-items: flex-start;
+    }
+
+
+    .secondList {
+        display: none;
     }
 
     .firstList li {
@@ -854,6 +905,12 @@ nav {
         display: flex;
         flex-direction: column;
     }
+
+
+    .aboutContent h1{
+        font-weight: 600;
+    }
+    
     
 
     .about_us_heading{
@@ -940,7 +997,8 @@ nav {
 
     .main_why_us button{
         margin-top: 3%;
-        padding: 2.2% 4.1%;
+        margin-bottom: 3%;
+        padding: 2% 5.1%;
         border-radius: 16px;
     }
    
@@ -1048,7 +1106,7 @@ nav {
 
 
 
-@media only screen and (min-width: 623px) and (max-width: 767px){
+@media only screen and (min-width: 623px) and (max-width: 733px){
     
     /* header */
 
@@ -1063,7 +1121,7 @@ nav {
 
     .mobile-logo {
         left: 10px;
-        top: 4px;
+        top: 10px;
     }
 
     .mobile-logo .textonly {
@@ -1076,6 +1134,9 @@ nav {
 
     .firstList li a {
         color: #344054;
+        font-weight: 600;
+        margin-left: 18px;
+        margin-top: 3%;
     }
 
 
@@ -1091,7 +1152,7 @@ nav {
 
     .nav-toggle {
         right: 16px;
-        top: 16px;
+        top: 21px;
     }
 
     .nav-close {
@@ -1123,6 +1184,11 @@ nav {
 
     .nav-toggle.nav-visible~.nav-close {
         display: flex;
+        margin-top: 1.5%;
+    }
+
+    .listItem{
+        padding-top: 8%;
     }
 
     .nav-toggle i,
@@ -1131,12 +1197,17 @@ nav {
         cursor: pointer;
     }
 
-    .firstList,
-    .secondList {
+    .firstList{
         width: 100%;
         display: flex;
         flex-direction: column;
         padding: 1%;
+        align-items: flex-start;
+    }
+
+
+    .secondList {
+        display: none;
     }
 
     .firstList li {
@@ -1186,6 +1257,11 @@ nav {
         display: flex;
         flex-direction: column;
     }
+
+    .aboutContent h1{
+        font-weight: 600;
+    }
+    
     
 
     .about_us_heading{
@@ -1259,9 +1335,362 @@ nav {
     /* Why Choose LovoRise */
    
     .main_why_us button{
-        margin-top: 1%;
-        padding: 2% 4.1%;
         border-radius: 16px;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        padding: 1.6% 5.1%;
+    }
+
+
+    /* Footer */
+
+
+
+    footer{
+        display: block;
+    }
+
+
+    footer .logoLanguageFooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    footer .logoLanguageFooter img{
+        margin-left: 12%;
+    }
+
+    .language-dropdown-btn {
+        text-align: center;
+        width: 160%;
+    }
+
+
+    .language-dropdown-content {
+        padding: 1% 5%;
+        width: 160%;
+    }
+
+
+        
+    .language-dropdown {
+        position: relative;
+        display: inline-block;
+        left: -20px;
+    }
+
+
+    #dropdown_icon{
+        margin-left: -22%;
+    }
+    
+
+    .language-dropdown ul li {
+        list-style-type: none;
+    }
+    
+
+    footer .company{
+        text-align: center;
+        padding: 3% 0px;
+    }
+
+
+    footer .community{
+        text-align: center;
+        padding: 3% 0px;
+        border: 1px solid #d1d4db;
+    }
+    
+    
+    footer .legal{
+        text-align: center;
+        padding: 3% 0px;
+        border-bottom: 1px solid #d1d4db;
+    }
+
+
+
+    footer .getTheApp{
+        text-align: center;
+        padding: 3% 0px;
+    }
+
+
+    footer .getTheApp h4{
+        display: none;
+    }
+
+    footer .getTheApp .icons{
+        display: none;
+    }
+
+
+    footer .getTheApp p{
+        margin-bottom: 2%;
+    }
+
+    
+
+    .footer_small_screen{
+        display: flex;
+        height: 10vh;
+    }
+   
+}
+
+
+
+
+@media only screen and (min-width: 733px) and (max-width: 767px){
+    
+    /* header */
+
+    .nav-toggle,
+    .mobile-logo,
+    .nav-close {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 10px;
+    }
+
+    .mobile-logo {
+        left: 10px;
+        top: 10px;
+    }
+
+    .mobile-logo .textonly {
+        margin-left: 10px;
+        font-size: 18px;
+        display: inline-block;
+        color: #F33156;
+    }
+
+
+    .firstList li a {
+        color: #344054;
+        font-weight: 600;
+        margin-left: 18px;
+        margin-top: 3%;
+    }
+
+
+    .secondList a {
+        color: #344054;
+    }
+
+    .textonly {
+        color: #F33156;
+    }
+    
+
+
+    .nav-toggle {
+        right: 16px;
+        top: 21px;
+    }
+
+    .nav-close {
+        display: none;
+        right: 10px;
+        z-index: 2;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .nav-visible {
+        display: flex;
+    }
+
+    nav.nav-visible .language_logoandtext img {
+        content: url('../images/language_icon.png');
+    }
+
+    .nav-toggle.nav-visible~.nav-close {
+        display: flex;
+        margin-top: 1.5%;
+    }
+
+    .listItem{
+        padding-top: 8%;
+    }
+
+    .nav-toggle i,
+    .nav-close i {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .firstList{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+        align-items: flex-start;
+    }
+
+
+    .secondList {
+        display: none;
+    }
+
+    .firstList li {
+        margin-bottom: 10px;
+    }
+
+    .language_logoandtext {
+        justify-content: center;
+    }
+
+    .popup {
+        position: absolute;
+        right: 18%;
+        top: 21.5%;
+        z-index: 3;
+        justify-content: center;
+    } 
+
+
+       
+    /* Cookie banner */
+
+    /* #cookieConsent {
+        display: none !important;
+    } */
+
+
+
+        /* Main  Section */
+
+    #add_about_bg_small_screens{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0% 0%;
+    }        
+    
+    
+    
+    .aboutContent{
+        padding-right: 0%;
+        padding: 5% 0%;
+    }
+
+
+    .aboutContent .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .aboutContent h1{
+        font-weight: 600;
+    }
+    
+    
+
+    .about_us_heading{
+        padding: 4% 5% 5% 5%;
+    }
+
+    
+
+    /* .about_boxes .about_box{
+        margin-bottom: 7%;
+    }
+     */
+
+
+    /* Align left */
+
+     .about_boxes .about_box{
+        margin-bottom: 7%;
+        margin-left: 8px;
+    }
+
+
+    .about_boxes{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    /* Our Goal cards */
+
+        
+
+    .vision_card > img{
+        content: url('../images/about_us_vision_small_devices.png');
+        height: auto;
+        width: auto;
+    }
+    
+    .mission_card > img{
+        content: url('../images/about_us_mission_small_devices.png');
+        height: auto;
+        width: auto;
+    }
+
+    .vision_card{
+        margin: 0% 0%;
+    }
+
+    
+ 
+    .goal_box .goal_img_below {
+        position: absolute;
+        bottom: -165px;
+       
+    }
+        
+    
+    .goal_boxes .goal_box p{
+        width: 290px;
+    }
+    
+
+    .goal_boxes .goal_box{
+        margin-bottom: 33%;
+    }
+
+
+
+    
+    /* Our Story */
+
+    .paragraph_image img{
+        display: none;
+    }
+
+    
+    .story_main .paragraph_image p{
+        width: 100%;
+        margin: 6%;
+        padding: 5%;
+    }
+
+
+
+    /* Why Choose LovoRise */
+   
+    .main_why_us button{
+        border-radius: 16px;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        padding: 1.3% 5.1%;
     }
 
 
@@ -1388,10 +1817,23 @@ nav {
     /* Main  Section */
     
     
-    
+    /* For align left */
     .aboutContent{
         padding-right: 00%;
         padding-left: 5%;
+    }
+
+
+    .about_boxes .about_box{
+        margin-bottom: 7%;
+        margin-left: 3%;
+    }
+
+
+    .about_boxes{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
     
     
@@ -1417,9 +1859,12 @@ nav {
 
     /* Why choose LovoRise */
 
+
     .main_why_us button{
-        padding: 1.5% 3.1%;
         border-radius: 16px;
+        margin-top: 1%;
+        margin-bottom: 3%;
+        padding: 1.3% 5.1%;
     }
 
 
@@ -1429,7 +1874,6 @@ nav {
 
     footer{
         display: block;
-        margin-top: 8%;
     }
 
 
@@ -1554,9 +1998,13 @@ nav {
 
         /* Why choose LovoRise */
 
+    
+
         .main_why_us button{
-            padding: 1.3% 2.5%;
-            border-radius: 16px;
+            border-radius: 18px;
+            margin-top: 1%;
+            margin-bottom: 3%;
+            padding: 1.3% 4.5%;
         }
 
     }
@@ -1623,9 +2071,44 @@ nav {
 
 
 
+@media only screen and (min-width: 1200px) and (max-width: 1400px){
+        
+    /* header */
 
-@media only screen and (min-width : 1200px){
+    .firstList {
+        width: 40%;
+    }   
+    
+
     .nav-toggle, .mobile-logo, .nav-close {
         display: none;
+    }
+
+    .goal_boxes .goal_box{
+        margin-bottom: 12%;
+    }
+
+
+    .secondList{
+        width: 65%;
+    }
+    
+}
+
+
+
+
+@media only screen and (min-width : 1400px){
+    .nav-toggle, .mobile-logo, .nav-close {
+        display: none;
+    }
+
+    .firstList {
+        width: 35%;
+    }   
+
+
+    .secondList{
+        width: 65%;
     }
 } 

@@ -26,39 +26,53 @@
                         <div class="textonly">LovoRise</div>
                     </a>
                 </li>
-                <li><a href="about_us.html">About us</a></li>
+                <li class="listItem"><a href="about_us.html">About us</a></li>
                 <li><a href="careers.html">Careers</a></li>
                 <li><a href="contact_us.html">Contact us</a></li>
             </ul>
             <ul class="secondList">
                 <a href="#" class="language_logoandtext" id="openDialog">
                     <img src="images/language_logo_white.png">
-                    <div class="languageText">Language</div>
+                    <div class="languageText">Eng</div>
                 </a>
             </ul>
         </nav>
     
         <!-- popup -->
-    
+
         <div class="popup">
             <div id="dialog" class="to_be_hidden_dialogue close">
-                <div class="topPart">
-                    <h4>Choose a Language</h4>
-                    <img src="images/navbar_cross.svg" alt="close button" id="closeDialog">
-                </div>
-                <hr>
                 <div class="Languagebuttons">
                     <button class="selected" onclick="selectLanguage(this)">
                         English
-                        <img src="images/Tick_icon.png" alt="">
+                    </button>
+                    <button onclick="selectLanguage(this)">
+                        Bengali
+                    </button>
+                    <button onclick="selectLanguage(this)">
+                        German
                     </button>
                     <button onclick="selectLanguage(this)">
                         Portuguese
-                        <img src="images/Tick_icon.png" alt="">
+                    </button>
+                    <button onclick="selectLanguage(this)">
+                        Turkish
+                    </button>
+                    <button onclick="selectLanguage(this)">
+                        Russian
+                    </button>
+                    <button onclick="selectLanguage(this)">
+                        Spanish
+                    </button>
+                    <button onclick="selectLanguage(this)">
+                        French
                     </button>
                 </div>
+                
             </div>
         </div>
+    
+        
     
         <br><br><br>
 
@@ -66,9 +80,9 @@
                 
     <!-- Cookie consent Banner -->
 
-    <div id="cookieConsent">
+    <div class = "cookieConsent hidden" id="cookieBanner">
         <p>This website uses cookies to ensure you get the best experience on our website. </p>
-        <button id="acceptCookies">Accept</button>
+        <button id="acceptBannerCookies">Accept</button>
     </div>
 
         
@@ -79,8 +93,11 @@
                 <h2>Rising of a Love Story</h2>
                 <div class="buttons">
                     <a href="https://play.google.com/store/apps/details?id=com.lovorise"><img src="images/play_store_footer.svg" alt="Google Play Store"></a>
-                    <a href="#"><img src="images/App_store_footer.svg" alt="App Store"></a>
+                    <a href="#"><img src="images/App_store_comming_soon.svg" alt="App Store"></a>
                 </div>
+            </div>
+            <div class="brief_desc">
+                <p>All photos are of models and used for illustrative purposes only</p>
             </div>
         </div>
         
@@ -142,7 +159,7 @@
         <div class="getTheApp">
             <h4>Get the app!</h4>
             <a href="https://play.google.com/store/apps/details?id=com.lovorise"><img src="images/play_store_footer.svg" alt="Play Store"></a>
-            <a href="#"><img src="images/App_store_footer.svg" alt="Apple Store"></a>
+            <a href="#"><img src="images/App_store_comming_soon.svg" alt="Apple Store"></a>
             <div class="icons">
                 <a href="https://www.facebook.com/profile.php?id=61555398823552&mibextid=ZbWKwL"><img src="images/facebook_icon.svg" alt="Facebook page"></a>
                 <a href="https://www.instagram.com/lovorise?igsh=ZHllNTJjdGgwbGhh"><img src="images/insta_icon.svg" alt="Instagram page"></a>
@@ -153,6 +170,42 @@
         </div>
     </footer>
 
+<!-- 
+    <div class="popup_footer">
+        <div id="dialog_footer" class="to_be_hidden_dialogue close_footer">
+            <div class="Languagebuttons_footer">
+                <button class="selected_footer" onclick="selectLanguage(this)">
+                    English
+                </button>
+                <button onclick="selectLanguage(this)">
+                    Bengali
+                </button>
+                <button onclick="selectLanguage(this)">
+                    German
+                </button>
+                <button onclick="selectLanguage(this)">
+                    Portuguese
+                </button>
+                <button onclick="selectLanguage(this)">
+                    Turkish
+                </button>
+                <button onclick="selectLanguage(this)">
+                    Russian
+                </button>
+                <button onclick="selectLanguage(this)">
+                    Spanish
+                </button>
+                <button onclick="selectLanguage(this)">
+                    French
+                </button>
+            </div>
+            
+        </div>
+    </div>
+ -->
+
+
+
     <!-- After Footer -->
 
     <div class="afterFooter">
@@ -160,20 +213,22 @@
         <span><a href="#">Personalised my choices</a></span>
         <div class="buttons_after_footer">
             <button class="accept"><a href="#">Accept</a></button>
-            <button class="decline"><a href="#">decline</a></button>
+            <button class="decline"><a href="#">Decline</a></button>
         </div>
     </div>
 
-    <div class="footer_small_screen">
+
+    
+    <div class="footer_small_screen hidden" id="footerSmallScreen">
         <h3>Get the app!</h3>
-        <button><a href="#">Download</a></button>
+        <button><a href="https://play.google.com/store/apps/details?id=com.lovorise">Download</a></button>
     </div>
 
     <script>
         // Navbar
         const openDialogButton = document.getElementById('openDialog');
         const dialog = document.getElementById('dialog');
-        const closeDialogButton = document.getElementById('closeDialog');
+        // const closeDialogButton = document.getElementById('closeDialog');
         const navToggle = document.querySelector('.nav-toggle');
         const navClose = document.querySelector('.nav-close');
         const nav = document.querySelector('nav');
@@ -247,7 +302,8 @@
         navToggle.addEventListener('click', openNav);
         navClose.addEventListener('click', closeNav);
         openDialogButton.addEventListener('click', openLanguagePopup);
-        closeDialogButton.addEventListener('click', closeLanguagePopup);
+        dialog.addEventListener('mouseleave', closeLanguagePopup);
+        
         window.addEventListener('resize', adjustContentMargin); // Adjust content margin on window resize
         window.addEventListener('resize', changeBackgroundOnScreenSize); // Change background on window resize
 
@@ -327,14 +383,15 @@
     });
 
 
-
-    // Cookie Banner 
-
+    // Coookie Banner 
 
     document.addEventListener("DOMContentLoaded", function() {
-        var cookieConsent = document.getElementById('cookieConsent');
-        var acceptCookiesButton = document.getElementById('acceptCookies');
-        var footerSmallScreen = document.querySelector('.footer_small_screen');
+        var after_Footer = document.querySelector(".afterFooter");
+        var footerSmallScreen = document.getElementById('footerSmallScreen');
+        var cookieBanner = document.getElementById('cookieBanner');
+        var acceptCookiesButton = document.querySelector(".accept");
+        var declineCookiesButton = document.querySelector(".decline");
+        var acceptBannerCookiesButton = document.getElementById('acceptBannerCookies');
 
         function setCookie(name, value, days) {
             var expires = "";
@@ -360,18 +417,23 @@
         function checkCookies() {
             if (window.innerWidth > 768) {
                 if (!getCookie('cookiesAccepted')) {
-                    cookieConsent.style.display = 'block';
+                    cookieBanner.style.display = 'block';
+                    after_Footer.style.display = 'flex';
+                    footerSmallScreen.style.display = "none";
                 } else {
-                    cookieConsent.style.display = 'none';
+                    cookieBanner.style.display = 'none';
+                    after_Footer.style.display = 'none';
+                    footerSmallScreen.style.display = "none";
                 }
-                footerSmallScreen.style.display = 'none';
             } else {
+                cookieBanner.style.display = "none";
                 if (getCookie('cookiesAccepted')) {
+                    after_Footer.style.display = 'none';
                     footerSmallScreen.style.display = 'flex';
                 } else {
+                    after_Footer.style.display = 'flex';
                     footerSmallScreen.style.display = 'none';
                 }
-                cookieConsent.style.display = 'none';
             }
         }
 
@@ -381,13 +443,35 @@
 
         acceptCookiesButton.addEventListener('click', function() {
             setCookie('cookiesAccepted', 'true', 365);
-            checkCookies();
+            if (window.innerWidth > 768) {
+                after_Footer.style.display = 'none';
+                cookieBanner.style.display = 'none';
+            } else {
+                after_Footer.style.display = 'none';
+                footerSmallScreen.style.display = 'none';
+            }
         });
-    });
 
+        declineCookiesButton.addEventListener('click', function() {
+            if (window.innerWidth < 768) {
+                after_Footer.style.display = 'none';
+                footerSmallScreen.style.display = 'none';
+            }
+            else{
+                after_Footer.style.display = 'none';
+                footerSmallScreen.style.display = 'none';
+                cookieBanner.style.display = "none";
+            }
+        });
+        s
+        acceptBannerCookiesButton.addEventListener('click', function() {
+            setCookie('cookiesAccepted', 'true', 365);
+            cookieBanner.style.display = 'none';
+            // after_Footer.style.display = 'none';
+        });
+        });
 
-
-        
+ 
     </script>
 </body>
 </html>

@@ -53,6 +53,7 @@
 
     .nav-toggle.nav-visible~.nav-close {
         display: flex;
+        margin-top: 1.5%;
     }
 
     .nav-toggle i,
@@ -61,20 +62,35 @@
         cursor: pointer;
     }
 
-    .firstList,
-    .secondList {
+    .firstList{
         width: 100%;
         display: flex;
         flex-direction: column;
         padding: 1%;
+        align-items: flex-start;
+    }
+
+
+    .secondList {
+        display: none;
     }
 
     .firstList li {
-        margin-bottom: 10px;
+        margin-bottom: 18px;
     }
 
     .language_logoandtext {
         justify-content: center;
+    }
+
+    .listItem{
+        padding-top: 8%;
+    }
+    
+    .firstList li a {
+        margin-left: 18px;
+        margin-top: 3%;
+        font-weight: 600;
     }
 
     .popup {
@@ -277,6 +293,7 @@
 
     .nav-toggle.nav-visible~.nav-close {
         display: flex;
+        margin-top: 1.5%;
     }
 
     .nav-toggle i,
@@ -285,20 +302,35 @@
         cursor: pointer;
     }
 
-    .firstList,
-    .secondList {
+    .firstList{
         width: 100%;
         display: flex;
         flex-direction: column;
         padding: 1%;
+        align-items: flex-start;
+    }
+
+
+    .secondList {
+        display: none;
     }
 
     .firstList li {
-        margin-bottom: 10px;
+        margin-bottom: 18px;
     }
 
     .language_logoandtext {
         justify-content: center;
+    }
+
+    .listItem{
+        padding-top: 8%;
+    }
+    
+    .firstList li a {
+        margin-left: 18px;
+        margin-top: 3%;
+        font-weight: 600;
     }
 
     .popup {
@@ -637,10 +669,44 @@
 
 
 
-@media only screen and (min-width : 1200px){
+@media only screen and (min-width: 1200px) and (max-width: 1400px){
+        
+    /* header */
+
+    .firstList {
+        width: 40%;
+    }   
+    
+
     .nav-toggle, .mobile-logo, .nav-close {
         display: none;
     }
+
+    .goal_boxes .goal_box{
+        margin-bottom: 12%;
+    }
+
+
+    .secondList{
+        width: 65%;
+    }
+    
 }
 
 
+
+
+@media only screen and (min-width : 1400px){
+    .nav-toggle, .mobile-logo, .nav-close {
+        display: none;
+    }
+
+    .firstList {
+        width: 35%;
+    }   
+
+
+    .secondList{
+        width: 65%;
+    }
+} 

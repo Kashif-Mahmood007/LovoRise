@@ -9,7 +9,7 @@
 
 
 body{
-    background-color: #FEF9FA;
+    background-color: #ffffff;
 }
 
 
@@ -95,12 +95,14 @@ nav {
     cursor: pointer;
 }
 
+
+
 .popup {
     display: flex;
     justify-content: center;
     position: absolute;
     right: 20px;
-    top: 50px;
+    top: 63px;
     z-index: 2;
 }
 
@@ -120,19 +122,24 @@ nav {
 .popup .to_be_hidden_dialogue .Languagebuttons {
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding: 6%;
 }
 
 .popup .to_be_hidden_dialogue .Languagebuttons button {
     display: flex;
     justify-content: space-between;
-    padding: 2% 7%;
+    padding: 3% 7%;
     margin: 2%;
     border-radius: 10px;
     border: 0px;
     box-shadow: 1px 1px 1px #efd3d3;
     background-color: white;
     cursor: pointer;
+}
+
+.popup .to_be_hidden_dialogue .Languagebuttons button:hover{
+    background-color: #F33156;
+    color: white;
 }
 
 .popup .to_be_hidden_dialogue .Languagebuttons .selected {
@@ -147,40 +154,42 @@ nav {
 
     /* Cookie banner */
 
-    
-#cookieConsent {
-    display: none;
+
+
+.cookieConsent {
     position: fixed;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    width: 400px;
-    background-color: #333;
-    color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
     text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
+    display: none; 
 }
 
+.cookieConsent p {
+    display: inline;
+}
 
-#cookieConsent button {
-    background: linear-gradient(to top, #F33383, #F33361);
-    color: white;
+#acceptBannerCookies {
+    background: #F33156;
+    color: #fff;
     border: none;
     padding: 10px 20px;
-    margin-top: 20px;
+    margin-left: 20px;
     cursor: pointer;
-    border-radius: 5px;
 }
+    
 
 
-
-
+.hidden {
+    display: none;
+}
 
 
         /* Main  Section */
+
 
 .home_bg{
     width: 100%;
@@ -190,6 +199,7 @@ nav {
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative; 
 }
 
 
@@ -210,26 +220,40 @@ nav {
 
 
 .home_bg .centerContent h1{
-    font-size: xx-large;
+    font-size: xxx-large;
+    letter-spacing: 1px;
 }
 
 
 
 .home_bg .centerContent h2{
     padding: 1.5% 0%;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 1px;
     word-spacing: 1px;
+    font-weight: 600;
+    font-size: xx-large;
 }
 
 
 
+.home_bg .brief_desc {
+    position: absolute; 
+    right: 0; 
+    bottom: 0; 
+    padding: 20px; 
+    color: white; 
+    font-weight: 200;
+    font-size: 13px;
+}
 
 
         /* Footer */
 
 
+
 footer{
+    width: 100%;
     display: flex;
     justify-content: space-around;
     color: #344054;
@@ -238,6 +262,7 @@ footer{
     border-bottom: 1px solid #e5e6e9;
     border-top: 1px solid #D6D6D6;
     padding-top: 5%;
+    /* margin-top: 2%; */
 }
 
 footer .logoLanguageFooter{
@@ -252,18 +277,19 @@ footer .logoLanguageFooter{
 }
 
 
- 
+    
 .language-dropdown-btn {
     margin-top: 8%;
     width: 100%;
-    padding: 4% 10%;
     border: none;
     background-color: #ffffff;
     border: 1px solid #e5e6e9;
     cursor: pointer;
     display: flex;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 12px;
+    padding: 4% 10%;
+    margin-bottom: 8px;
 }
 
 
@@ -284,10 +310,10 @@ footer .logoLanguageFooter{
     background-color: #fff;
     min-width: 100%;
     border-radius: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 1px solid #d1d4db;
     z-index: 1;
     opacity: 0; 
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
 
@@ -296,19 +322,19 @@ footer .logoLanguageFooter{
 }
 
 
+
 .language-dropdown-content a {
     color: #344054;
-    padding: 4% 10%;
+    padding: 3% 10%;
     text-decoration: none;
     display: flex;
     align-items: center;
     font-size: 13px;
-    margin: 5%;
+    margin: 6% 5%;
     box-shadow: 2px 2px 2px #D6D6D6;
     border-radius: 20px;
 }
-
-
+        
 .language-dropdown ul li{
     list-style-type: none;
 }

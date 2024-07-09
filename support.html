@@ -25,7 +25,7 @@
                     <div class="textonly">LovoRise</div>
                 </a>
             </li>
-            <li><a href="about_us.html">About us</a></li>
+            <li class="listItem"><a href="about_us.html">About us</a></li>
             <li><a href="careers.html">Careers</a></li>
             <li><a href="contact_us.html">Contact us</a></li>
         </ul>
@@ -41,23 +41,36 @@
 
     <div class="popup">
         <div id="dialog" class="to_be_hidden_dialogue close">
-            <div class="topPart">
-                <h4>Choose a Language</h4>
-                <img src="images/navbar_cross.svg" alt="close button" id="closeDialog">
-            </div>
-            <hr>
             <div class="Languagebuttons">
                 <button class="selected" onclick="selectLanguage(this)">
                     English
-                    <img src="images/Tick_icon.png" alt="">
+                </button>
+                <button onclick="selectLanguage(this)">
+                    Bengali
+                </button>
+                <button onclick="selectLanguage(this)">
+                    German
                 </button>
                 <button onclick="selectLanguage(this)">
                     Portuguese
-                    <img src="images/Tick_icon.png" alt="">
+                </button>
+                <button onclick="selectLanguage(this)">
+                    Turkish
+                </button>
+                <button onclick="selectLanguage(this)">
+                    Russian
+                </button>
+                <button onclick="selectLanguage(this)">
+                    Spanish
+                </button>
+                <button onclick="selectLanguage(this)">
+                    French
                 </button>
             </div>
+            
         </div>
     </div>
+
 
     
 <br><br><br>
@@ -172,7 +185,7 @@
     <div class="getTheApp">
         <h4>Get the app!</h4>
         <a href="https://play.google.com/store/apps/details?id=com.lovorise"><img src="images/play_store_footer.svg" alt="Play Store"></a>
-        <a href="#"><img src="images/App_store_footer.svg" alt="Apple Store"></a>
+        <a href="#"><img src="images/App_store_comming_soon.svg" alt="Apple Store"></a>
         <div class="icons">
             <a href="https://www.facebook.com/profile.php?id=61555398823552&mibextid=ZbWKwL"><img src="images/facebook_icon.svg" alt="Facebook page"></a>
             <a href="https://www.instagram.com/lovorise?igsh=ZHllNTJjdGgwbGhh"><img src="images/insta_icon.svg" alt="Instagram page"></a>
@@ -191,7 +204,7 @@
 
     const openDialogButton = document.getElementById('openDialog');
     const dialog = document.getElementById('dialog');
-    const closeDialogButton = document.getElementById('closeDialog');
+    // const closeDialogButton = document.getElementById('closeDialog');
     const navToggle = document.querySelector('.nav-toggle');
     const navClose = document.querySelector('.nav-close');
     const nav = document.querySelector('nav');
@@ -254,7 +267,8 @@
 
 
     openDialogButton.addEventListener('click', openLanguagePopup);
-    closeDialogButton.addEventListener('click', closeLanguagePopup);
+    dialog.addEventListener('mouseleave', closeLanguagePopup);
+    
     navToggle.addEventListener('click', () => {
         if (!nav.classList.contains('nav-visible')) {
             openNav();
