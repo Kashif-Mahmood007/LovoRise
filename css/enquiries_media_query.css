@@ -139,6 +139,10 @@
     }
 
 
+    .identity .dropdown{
+        padding-top: 5%;
+    }
+
 
 
     form .submitButton input{
@@ -146,8 +150,6 @@
         margin-bottom: 12%;
         
     }
-
-
 
 
 
@@ -383,6 +385,11 @@
 
     form{
         padding: 0% 12%;
+    }
+
+
+    .identity .dropdown{
+        padding-top: 5%;
     }
 
 

@@ -282,6 +282,10 @@ nav {
 
 /* form */
 
+#dropdownButton{
+    cursor: pointer;
+}
+
 
 form{
     width: 100%;

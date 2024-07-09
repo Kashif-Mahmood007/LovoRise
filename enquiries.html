@@ -206,7 +206,7 @@
             <a href="https://www.tiktok.com/@lovorise?_t=8nqMEP1eoTJ&_r=1"><img src="images/tiktok_icon.svg" alt="TikTok page"></a>
             <a href="https://www.youtube.com/@lovorise"><img src="images/youtube_icon.svg" alt="Youtube page"></a>
         </div>
-        <p>&copy; 2024 LovoRise</p>
+        <p>&copy; 2024 Lovorise Ltd</p>
     </div>
 </footer>
 
@@ -308,24 +308,53 @@
 
 
 
-        // for swtichinf between a_brand or an_individual
+        // for swtiching between a_brand or an_individual
 
     // JavaScript for Dropdown Menu Selection
+    
     document.addEventListener('DOMContentLoaded', function () {
         const dropdownButton = document.getElementById('dropdownButton');
         const dropdownItems = document.querySelectorAll('.dropdown-item');
+        const dropdownContent = document.querySelector('.dropdown-content');
 
         dropdownItems.forEach(item => {
             item.addEventListener('click', function (event) {
                 event.preventDefault();
-                dropdownButton.innerHTML = `${item.textContent} <img src="images/dropdown_button_white.png" alt="">`;
+                dropdownButton.textContent = item.textContent.trim();
+                closeDropdown();
             });
+        });
+
+        function closeDropdown() {
+            dropdownContent.style.display = 'none';
+        }
+
+        dropdownButton.addEventListener('click', function () {
+            if (dropdownContent.style.display === 'none' || dropdownContent.style.display === '') {
+                dropdownContent.style.display = 'block';
+            } else {
+                dropdownContent.style.display = 'none';
+            }
+        });
+
+        // Close dropdown if user clicks outside
+        document.addEventListener('click', function (event) {
+            if (!dropdownButton.contains(event.target) && !dropdownContent.contains(event.target)) {
+                closeDropdown();
+            }
+        });
+
+        // Close dropdown if user hovers outside
+        document.addEventListener('mouseover', function (event) {
+            if (!dropdownButton.contains(event.target) && !dropdownContent.contains(event.target)) {
+                closeDropdown();
+            }
         });
     });
 
 
+
     
-        // Footer
 
     // Footer
 
