@@ -77,13 +77,6 @@
         <br><br><br>
 
 
-                
-    <!-- Cookie consent Banner -->
-
-    <div class = "cookieConsent hidden" id="cookieBanner">
-        <p>This website uses cookies to ensure you get the best experience on our website. </p>
-        <button id="acceptBannerCookies">Accept</button>
-    </div>
 
         
         <!-- Main Contact us Section -->
@@ -170,50 +163,14 @@
         </div>
     </footer>
 
-<!-- 
-    <div class="popup_footer">
-        <div id="dialog_footer" class="to_be_hidden_dialogue close_footer">
-            <div class="Languagebuttons_footer">
-                <button class="selected_footer" onclick="selectLanguage(this)">
-                    English
-                </button>
-                <button onclick="selectLanguage(this)">
-                    Bengali
-                </button>
-                <button onclick="selectLanguage(this)">
-                    German
-                </button>
-                <button onclick="selectLanguage(this)">
-                    Portuguese
-                </button>
-                <button onclick="selectLanguage(this)">
-                    Turkish
-                </button>
-                <button onclick="selectLanguage(this)">
-                    Russian
-                </button>
-                <button onclick="selectLanguage(this)">
-                    Spanish
-                </button>
-                <button onclick="selectLanguage(this)">
-                    French
-                </button>
-            </div>
-            
-        </div>
-    </div>
- -->
-
-
-
     <!-- After Footer -->
 
     <div class="afterFooter">
         <p>We and our partners use different tools to research who visits our website, provide personalized offers and ads based on your interests, and make our site more interactive for you. <br></p>
         
         <div class="buttons_after_footer">
-            <button class="accept"><a href="#">Accept</a></button>
-            <button class="decline"><a href="#">Decline</a></button>
+            <button class="accept">Accept</button>
+            <button class="decline" id = "decline_button">Decline</button>
         </div>
     </div>
 
@@ -385,19 +342,103 @@
 
     // Coookie Banner 
 
+    // document.addEventListener("DOMContentLoaded", function() {
+    //     var afterFooter = document.querySelector(".afterFooter");
+    //     var footerSmallScreen = document.getElementById('footerSmallScreen');
+    //     var acceptCookiesButton = document.querySelector(".accept");
+    //     var declineCookiesButton = document.querySelector(".decline");
+
+    //     function setCookie(name, value, days) {
+    //         var expires = "";
+    //         if (days) {
+    //             var date = new Date();
+    //             date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    //             expires = "; expires=" + date.toUTCString();
+    //         }
+    //         document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    //     }
+
+    //     function getCookie(name) {
+    //         var nameEQ = name + "=";
+    //         var ca = document.cookie.split(';');
+    //         for (var i = 0; i < ca.length; i++) {
+    //             var c = ca[i];
+    //             while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+    //             if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    //         }
+    //         return null;
+    //     }
+
+
+    //     function checkCookies() {
+    //         if (window.innerWidth > 768) {
+    //             if (!getCookie('cookiesAccepted') && !getCookie('cookiesDeclined')) {
+    //                 afterFooter.style.display = 'flex';
+    //                 if (footerSmallScreen) {
+    //                     footerSmallScreen.style.display = "none";
+    //                 }
+    //             } else {
+    //                 afterFooter.style.display = 'none';
+    //                 if (footerSmallScreen) {
+    //                     footerSmallScreen.style.display = "none";
+    //                 }
+    //             }
+    //         } else {
+    //             if (getCookie('cookiesAccepted') || getCookie('cookiesDeclined')) {
+    //                 afterFooter.style.display = 'none';
+    //                 if (footerSmallScreen) {
+    //                     footerSmallScreen.style.display = 'flex';
+    //                 }
+    //             } else {
+    //                 afterFooter.style.display = 'flex';
+    //                 if (footerSmallScreen) {
+    //                     footerSmallScreen.style.display = 'none';
+    //                 }
+    //             }
+    //         }
+    //     }
+
+    //     checkCookies(); // Initial check on page load
+
+    //     window.addEventListener('resize', checkCookies); // Check on window resize
+
+    //     acceptCookiesButton.addEventListener('click', function() {
+    //         setCookie('cookiesAccepted', 'true', 365);
+    //         if (window.innerWidth > 768) {
+    //             after_Footer.style.display = 'none';
+    //         } else {
+    //             after_Footer.style.display = 'none';
+    //             footerSmallScreen.style.display = 'none';
+    //         }
+    //     });
+
+    //     declineCookiesButton.addEventListener('click', function() {
+    //         setCookie('cookiesDeclined', 'true', 365);
+    //         if (window.innerWidth < 768) {
+    //             after_Footer.style.display = 'none';
+    //             footerSmallScreen.style.display = 'none';
+    //         }
+    //         else{
+    //             after_Footer.style.display = 'none';
+    //             footerSmallScreen.style.display = 'none';
+    //         }
+    //     });
+        
+    // });
+
+
+
     document.addEventListener("DOMContentLoaded", function() {
-        var after_Footer = document.querySelector(".afterFooter");
+        var afterFooter = document.querySelector(".afterFooter");
         var footerSmallScreen = document.getElementById('footerSmallScreen');
-        var cookieBanner = document.getElementById('cookieBanner');
         var acceptCookiesButton = document.querySelector(".accept");
         var declineCookiesButton = document.querySelector(".decline");
-        var acceptBannerCookiesButton = document.getElementById('acceptBannerCookies');
 
         function setCookie(name, value, days) {
             var expires = "";
             if (days) {
                 var date = new Date();
-                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                date.setTime(date.getTime() + (10));
                 expires = "; expires=" + date.toUTCString();
             }
             document.cookie = name + "=" + (value || "") + expires + "; path=/";
@@ -414,25 +455,31 @@
             return null;
         }
 
+
         function checkCookies() {
             if (window.innerWidth > 768) {
-                if (!getCookie('cookiesAccepted')) {
-                    cookieBanner.style.display = 'block';
-                    after_Footer.style.display = 'flex';
-                    footerSmallScreen.style.display = "none";
+                if (!getCookie('cookiesAccepted') && !getCookie('cookiesDeclined')) {
+                    afterFooter.style.display = 'flex';
+                    if (footerSmallScreen) {
+                        footerSmallScreen.style.display = "none";
+                    }
                 } else {
-                    cookieBanner.style.display = 'none';
-                    after_Footer.style.display = 'none';
-                    footerSmallScreen.style.display = "none";
+                    afterFooter.style.display = 'none';
+                    if (footerSmallScreen) {
+                        footerSmallScreen.style.display = "none";
+                    }
                 }
             } else {
-                cookieBanner.style.display = "none";
-                if (getCookie('cookiesAccepted')) {
-                    after_Footer.style.display = 'none';
-                    footerSmallScreen.style.display = 'flex';
+                if (getCookie('cookiesAccepted') || getCookie('cookiesDeclined')) {
+                    afterFooter.style.display = 'none';
+                    if (footerSmallScreen) {
+                        footerSmallScreen.style.display = 'flex';
+                    }
                 } else {
-                    after_Footer.style.display = 'flex';
-                    footerSmallScreen.style.display = 'none';
+                    afterFooter.style.display = 'flex';
+                    if (footerSmallScreen) {
+                        footerSmallScreen.style.display = 'none';
+                    }
                 }
             }
         }
@@ -441,35 +488,28 @@
 
         window.addEventListener('resize', checkCookies); // Check on window resize
 
+
         acceptCookiesButton.addEventListener('click', function() {
-            setCookie('cookiesAccepted', 'true', 365);
-            if (window.innerWidth > 768) {
-                after_Footer.style.display = 'none';
-                cookieBanner.style.display = 'none';
-            } else {
-                after_Footer.style.display = 'none';
+            setCookie('cookiesAccepted', 'true', 10);
+            afterFooter.style.display = 'none';
+            if (footerSmallScreen) {
                 footerSmallScreen.style.display = 'none';
             }
         });
 
         declineCookiesButton.addEventListener('click', function() {
-            if (window.innerWidth < 768) {
-                after_Footer.style.display = 'none';
+            setCookie('cookiesDeclined', 'true', 10);
+            afterFooter.style.display = 'none';
+            if (footerSmallScreen) {
                 footerSmallScreen.style.display = 'none';
             }
-            else{
-                after_Footer.style.display = 'none';
-                footerSmallScreen.style.display = 'none';
-                cookieBanner.style.display = "none";
-            }
         });
-        s
-        acceptBannerCookiesButton.addEventListener('click', function() {
-            setCookie('cookiesAccepted', 'true', 365);
-            cookieBanner.style.display = 'none';
-            // after_Footer.style.display = 'none';
-        });
-        });
+        
+    });
+
+
+
+    
 
  
     </script>

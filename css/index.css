@@ -152,39 +152,6 @@ nav {
 
 
 
-    /* Cookie banner */
-
-
-
-.cookieConsent {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    display: none; 
-    z-index: 1000;
-}
-
-.cookieConsent p {
-    display: inline;
-}
-
-#acceptBannerCookies {
-    background: #F33156;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin-left: 20px;
-    cursor: pointer;
-    
-}
-    
-
-
 .hidden {
     display: none;
 }
@@ -463,21 +430,17 @@ footer .getTheApp p{
     padding: 4% 25%;
     margin: 0% 3%;
     border-radius: 20px;
+    cursor: pointer;
 }
-
-.afterFooter .buttons_after_footer button a{
-    text-decoration: none;
-}
+ 
 
 
 .buttons_after_footer .accept{
     background-color: #F33156;
     border: 0px;
-}
-
-.buttons_after_footer .accept a{
     color: white;
 }
+
 
 .buttons_after_footer .decline{
     border: 1px solid #F33156;
@@ -492,7 +455,7 @@ footer .getTheApp p{
 .footer_small_screen{
     width: 100%;
     background: linear-gradient(#F33367, #F33381);
-    height: 13vh;
+    height: 8vh;
     display: none;
     justify-content: space-around;
     align-items: center;

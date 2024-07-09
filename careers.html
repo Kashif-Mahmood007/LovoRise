@@ -76,16 +76,6 @@
 <br><br><br>
 
 
-        
-    <!-- Cookie consent Banner -->
-
-    <div id="cookieConsent">
-        <p>This website uses cookies to ensure you get the best experience on our website. </p>
-        <button id="acceptCookies">Accept</button>
-    </div>
-
-    
-
     <!-- Careers Section -->
 
     <div class="paragraph">
@@ -330,58 +320,7 @@
 
     
     
-    // Cookie Banner 
     
-
-    document.addEventListener("DOMContentLoaded", function() {
-        var cookieConsent = document.getElementById('cookieConsent');
-        var acceptCookiesButton = document.getElementById('acceptCookies')
-
-        function setCookie(name, value, days) { 
-            var expires = "";
-            if (days) {
-                var date = new Date();
-                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-                expires = "; expires=" + date.toUTCString();
-            }
-            document.cookie = name + "=" + (value || "") + expires + "; path=/";
-        }
-
-        function getCookie(name) {
-            var nameEQ = name + "=";
-            var ca = document.cookie.split(';');
-            for (var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-            }
-            return null;
-        }
-
-        function checkCookies() {
-            if (window.innerWidth > 768) {
-                if (!getCookie('cookiesAccepted')) {
-                    cookieConsent.style.display = 'block';
-                } else {
-                    cookieConsent.style.display = 'none';
-                }
-            } 
-            else {
-                cookieConsent.style.display = 'none';
-            }
-        }
-
-        checkCookies(); // Initial check on page load
-
-        window.addEventListener('resize', checkCookies); // Check on window resize
-
-        acceptCookiesButton.addEventListener('click', function() {
-            setCookie('cookiesAccepted', 'true', 365);
-            checkCookies();
-        });
-    });
-
-
 
 
 
