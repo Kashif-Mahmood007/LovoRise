@@ -340,93 +340,9 @@
     });
 
 
+    
+
     // Coookie Banner 
-
-    // document.addEventListener("DOMContentLoaded", function() {
-    //     var afterFooter = document.querySelector(".afterFooter");
-    //     var footerSmallScreen = document.getElementById('footerSmallScreen');
-    //     var acceptCookiesButton = document.querySelector(".accept");
-    //     var declineCookiesButton = document.querySelector(".decline");
-
-    //     function setCookie(name, value, days) {
-    //         var expires = "";
-    //         if (days) {
-    //             var date = new Date();
-    //             date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-    //             expires = "; expires=" + date.toUTCString();
-    //         }
-    //         document.cookie = name + "=" + (value || "") + expires + "; path=/";
-    //     }
-
-    //     function getCookie(name) {
-    //         var nameEQ = name + "=";
-    //         var ca = document.cookie.split(';');
-    //         for (var i = 0; i < ca.length; i++) {
-    //             var c = ca[i];
-    //             while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-    //             if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-    //         }
-    //         return null;
-    //     }
-
-
-    //     function checkCookies() {
-    //         if (window.innerWidth > 768) {
-    //             if (!getCookie('cookiesAccepted') && !getCookie('cookiesDeclined')) {
-    //                 afterFooter.style.display = 'flex';
-    //                 if (footerSmallScreen) {
-    //                     footerSmallScreen.style.display = "none";
-    //                 }
-    //             } else {
-    //                 afterFooter.style.display = 'none';
-    //                 if (footerSmallScreen) {
-    //                     footerSmallScreen.style.display = "none";
-    //                 }
-    //             }
-    //         } else {
-    //             if (getCookie('cookiesAccepted') || getCookie('cookiesDeclined')) {
-    //                 afterFooter.style.display = 'none';
-    //                 if (footerSmallScreen) {
-    //                     footerSmallScreen.style.display = 'flex';
-    //                 }
-    //             } else {
-    //                 afterFooter.style.display = 'flex';
-    //                 if (footerSmallScreen) {
-    //                     footerSmallScreen.style.display = 'none';
-    //                 }
-    //             }
-    //         }
-    //     }
-
-    //     checkCookies(); // Initial check on page load
-
-    //     window.addEventListener('resize', checkCookies); // Check on window resize
-
-    //     acceptCookiesButton.addEventListener('click', function() {
-    //         setCookie('cookiesAccepted', 'true', 365);
-    //         if (window.innerWidth > 768) {
-    //             after_Footer.style.display = 'none';
-    //         } else {
-    //             after_Footer.style.display = 'none';
-    //             footerSmallScreen.style.display = 'none';
-    //         }
-    //     });
-
-    //     declineCookiesButton.addEventListener('click', function() {
-    //         setCookie('cookiesDeclined', 'true', 365);
-    //         if (window.innerWidth < 768) {
-    //             after_Footer.style.display = 'none';
-    //             footerSmallScreen.style.display = 'none';
-    //         }
-    //         else{
-    //             after_Footer.style.display = 'none';
-    //             footerSmallScreen.style.display = 'none';
-    //         }
-    //     });
-        
-    // });
-
-
 
     document.addEventListener("DOMContentLoaded", function() {
         var afterFooter = document.querySelector(".afterFooter");
@@ -438,7 +354,7 @@
             var expires = "";
             if (days) {
                 var date = new Date();
-                date.setTime(date.getTime() + (10));
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
                 expires = "; expires=" + date.toUTCString();
             }
             document.cookie = name + "=" + (value || "") + expires + "; path=/";
@@ -488,28 +404,32 @@
 
         window.addEventListener('resize', checkCookies); // Check on window resize
 
-
         acceptCookiesButton.addEventListener('click', function() {
-            setCookie('cookiesAccepted', 'true', 10);
-            afterFooter.style.display = 'none';
-            if (footerSmallScreen) {
+            setCookie('cookiesAccepted', 'true', 365);
+            if (window.innerWidth > 768) {
+                afterFooter.style.display = 'none';
+                footerSmallScreen.style.display = 'none';
+            } else {
+                afterFooter.style.display = 'none';
+                footerSmallScreen.style.display = 'flex';
+            }
+            console.log("The cookies are accepted")
+        });
+        
+        declineCookiesButton.addEventListener('click', function() {
+            console.log("The cookies are not accepted")
+            setCookie('cookiesDeclined', 'true', 365);
+            if (window.innerWidth < 768) {
+                afterFooter.style.display = 'none';
                 footerSmallScreen.style.display = 'none';
             }
-        });
-
-        declineCookiesButton.addEventListener('click', function() {
-            setCookie('cookiesDeclined', 'true', 10);
-            afterFooter.style.display = 'none';
-            if (footerSmallScreen) {
+            else{
+                afterFooter.style.display = 'none';
                 footerSmallScreen.style.display = 'none';
             }
         });
         
     });
-
-
-
-    
 
  
     </script>
